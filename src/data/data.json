@@ -251,7 +251,9 @@
 	
 "Flags" : {
 	"Austrian Empire": "Flag_Austrian_Empire.png",
+	"Baden": "Flag_Baden.png",
 	"Batavian Republic": "Flag_Batavian_Republic.png",
+	"Denmark-Norway": "Flag_Denmark.png",
 	"Duchy of Warsaw": "Flag_Duchy_of_Warsaw.png",
 	"Duchy of Brunswick": "Flag_Duchy_of_Brunswick.png",
 	"Electorate of Bavaria": "Flag_Electorate_of_Bavaria.png", 
@@ -259,9 +261,11 @@
 	"France": "Flag_France.png",
 	"French Empire": "Flag_France.png",
 	"French Kingdom": "Flag_Kingdom_of_France.png",
+	"Grand Duchy of Berg": "Flag_Grand_Duchy_of_Berg.png",
 	"Hanover": "Flag_Hanover.png", 
 	"Holy Roman Empire": "Flag_Holy_Roman_Empire.png", 	
 	"Napoleonic Italy": "Flag_Napoleonic_Kingdom_of_Italy.png",
+	"Napoleonic Spain": "Flag_Napoleonic_Spain.png",
 	"Portugal": "Flag_Portugal.png", 
 	"Prussia": "Flag_Prussia.png", 	 
 	"Russian Empire": "Flag_Russia.png", 
@@ -273,11 +277,14 @@
 	"Kingdom of Two Sicilies": "Flag_Kingdom_of_the_Two_Sicilies.png",
 	"Kingdom of Sicily": "Flag_Kingdom_of_the_Two_Sicilies.png",
 	"Nassau": "Flag_Nassau.png",
+	"Saxony": "Flag_Saxony.png",
 	"Sardinia": "Flag_Kingdom_of_Sardinia.png", 
 	"Spain": "Flag_Spain.png", 	
 	"Sweden": "Flag_Sweden.png",
 	"Switzerland": "Flag_Switzerland.png",
+	"Swiss Confederation": "Flag_Switzerland.png",
 	"Tuscany": "Flag_Tuscany.png",
+	"Westphalia": "Flag_Westphalia.png",
 	"Württemberg": "Flag_Wurttemberg.png"
 }
 
