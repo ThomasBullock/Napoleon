@@ -1,0 +1,31 @@
+extends ./layout-black.pug
+
+block content        
+		main
+			.page
+				h1.page__heading The Characters of The Napoleonic War
+				ul.page__list
+					each item in data
+						li.characters__item
+							.characters__wrapper
+								.characters__img-wrapper
+									img.characters__img(src='/static/img/characters/' + item.surname + '.jpg', alt=item.name)
+								.characters__details
+									h2.characters__name #{item.name}
+									|  
+									img.characters__flag(src='/static/img/flags/' + flags[item.nation])
+									h4.characters__rank #{item.rank}
+									p.characters__short #{item.short}
+										| 
+									|  
+									a.characters__link(href='/characters/' + item.name) Learn more
+									ul.campaigns__row
+										each link, index in item.battles
+											if index < 1
+												li.campaigns__list--first
+													a.campaigns__battlelink(href='/battles/' + link) #{link}
+											else
+												li.campaigns__list
+													a.campaigns__battlelink(href='/battles/' + link) #{link}	
+
+

@@ -1,0 +1,33 @@
+extends ./layout-white.pug
+
+block content        
+		main
+			.page
+				h1.page__heading The Campaigns of The Napoleonic War
+				ul.page__list
+					each item in data
+						li.campaigns__item.wrapper
+												.campaigns__img-wrapper
+													img.campaigns__img(src='/static/img/campaigns/' + item.banner + '.jpg', alt='Napoleonic Painting')
+												.campaigns__facts--margin-left
+													h4.campaigns__heading #{item.title}
+													|  
+													span.campaigns__date #{item.duration.from} to #{item.duration.to}
+													|  
+													span.campaigns__locations #{item.locations}
+													p.campaigns__summary
+														| #{item.subtitle}
+													a.campaigns__link(href='/campaigns/' + item.title) Learn more	
+													ul.campaigns__row
+														each link, index in item.battles
+															if index < 1
+																li.campaigns__list--first
+																	a.campaigns__battlelink(href='/battles/' + link.title) #{link.title}
+															else
+																li.campaigns__list
+																	a.campaigns__battlelink(href='/battles/' + link.title) #{link.title}																
+
+
+
+
+					

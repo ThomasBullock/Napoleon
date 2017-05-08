@@ -1,0 +1,284 @@
+{
+	"Campaigns": {
+		"War of the Third Coalition 1805": {
+			"title": "War of the Third Coalition 1805",
+			"subtitle": "The War of the Third Coalition was a European conflict spanning the years 1803 to 1806. During the war, France and its client states under Napoleon I, defeated an alliance, the Third Coalition, made up of the Holy Roman Empire, Russia, Britain and others.",
+			"duration": {
+				"from": 1805,
+				"to": 1806
+			},
+			"belligerents": {
+				"Third Coalition": ["Holy Roman Empire", "Russian Empire", "United Kingdom", "Kingdom of Naples", "Kingdom of Sicily", "Sweden"],
+				"French Empire and Satellites": ["France", "Spain", "Electorate of Bavaria", "Napoleonic Italy", "Batavian Republic", "Württemberg", "Etruria"]
+			},
+			"locations": "Central Europe, Italy, and Atlantic Ocean",
+			"banner": "Napoleon_Francis",
+			"summary": "The War of the Third Coalition was a European conflict spanning the years 1803 to 1806. During the war, France and its client states under Napoleon I, defeated an alliance, the Third Coalition, made up of the Holy Roman Empire, Russia, Britain and others. Great Britain had already been at war with France following the resumption of hostilities resulting from the breakdown of the Peace of Amiens and remained the only country still at war with France after the Treaty of Pressburg. From 1803–05, Britain stood under constant threat of a French invasion. The Royal Navy, however, secured mastery of the seas and decisively destroyed a Franco-Spanish fleet at the Battle of Trafalgar in October 1805.",
+			"battles": [
+					 {
+						"title": "Battle of Ulm",
+						"date": {
+							"start": "1805-10-15",
+							"end": "1805-10-20"
+						},
+						"result": "Decisive French victory",
+						"location": {
+							"lat": 48.4085152,
+							"lng": 9.9428302
+						},
+						"belligerents": {
+							"France": {
+								"nations": ["France"],
+								"strength": 80000,
+								"casualties": 1500
+							},
+							"Holy Roman Empire": {
+								"nations": ["Holy Roman Empire"],
+								"strength": 40000,
+								"casualties": 4000
+							}
+						}
+					},
+
+				 {
+						"title": "Battle of Trafalgar",
+						"date": {
+							"start": "1805-10-21"
+						},
+						"result": "Decisive British victory",
+						"location": {
+							"lat": 36.327282,
+							"lng": -6.215012
+						},
+						"belligerents": {
+							"France": {
+								"nations": ["France", "Kingdom of Spain"],
+								"strength": "41 ships",
+								"casualties": 1666
+							},
+							"United Kingdom": {
+								"nations": ["United Kingdom"],
+								"strength": "33 Ships",
+								"casualties": 13781
+							}
+						}
+					},
+
+				 {
+						"title": "Battle of Austerlitz",
+						"date": {
+							"start": "1805-12-02"
+						},
+						"result": "Decisive French victory",
+						"location": {
+							"lat": 49.1410606,
+							"lng": 16.7668404
+						},
+						"belligerents": {
+							"France": {
+								"nations": ["France"],
+								"strength": 75000,
+								"casualties": 8245
+							},
+							"Allies": {
+								"nations": ["Russia", "Holy Roman Empire"],
+								"strength": 89400,
+								"casualties": 36000
+							}
+						}
+					}
+
+			]
+		},
+
+		"Hundred Days (War of the Seventh Coalition)": {
+			"title": "Hundred Days (War of the Seventh Coalition)",
+			"subtitle": "The Hundred Days marked the period between Napoleon's return from exile on the island of Elba to Paris and the second restoration of King Louis XVIII. This set the stage for the last conflict in the Napoleonic Wars.",
+			"duration": {
+				"from": "20 March",
+				"to": "8 July 1815"
+			},
+			"belligerents": {
+				"Third Coalition": ["United Kingdom", "Prussia", "Austrian Empire", "Russian Empire", "Hanover", "Nassau", "Duchy of Brunswick", "Sweden", "Netherlands", "Spain", "Portugal", "Sardinia", "Kingdom of Two Sicilies", "Tuscany", "Switzerland", "French Kingdom"],
+				"French Empire and Satellites": ["France", "Naples"]
+			},
+			"locations": "France, present-day Belgium, present-day Italy",
+			"banner": "Waterloo",
+			"summary": "The Hundred Days marked the period between Napoleon's return from exile on the island of Elba to Paris on 20 March 1815 and the second restoration of King Louis XVIII on 8 July 1815 (a period of 111 days).[a] This period saw the War of the Seventh Coalition, and includes the Waterloo Campaign, the Neapolitan War as well as several other minor campaigns. The phrase les Cent Jours (the hundred days) was first used by the prefect of Paris, Gaspard, comte de Chabrol, in his speech welcoming the king back to Paris on 8 July.  Napoleon returned while the Congress of Vienna was sitting. On 13 March, seven days before Napoleon reached Paris, the powers at the Congress of Vienna declared him an outlaw, and on 25 March Austria, Prussia, Russia and the United Kingdom, members of the Seventh Coalition, bound themselves to put 150,000 men each into the field to end his rule.[5] This set the stage for the last conflict in the Napoleonic Wars, the defeat of Napoleon at the Battle of Waterloo, the restoration of the French monarchy for the second time and the permanent exile of Napoleon to the distant island of Saint Helena, where he died in May 1821.",
+			"battles": [
+					{
+						"title": "Battle of Ligny",
+						"date": {
+							"start": "1815-06-16"
+						},
+						"result": "French Victory",
+						"location": {
+							"lat": 50.52027,
+							"lng": 4.5814
+						},
+						"belligerents": {
+							"French Empire": {
+								"nations": ["French Empire"],
+								"strength": 60800,
+								"casualties": 12000
+							},
+							"Seventh Coalition": {
+								"nations": ["Prussia"],
+								"strength": 84000,
+								"casualties": 12000
+							}
+						}
+					},
+				 {
+						"title": "Battle of Quatre Bras",
+						"date": {
+							"start": "1815-06-16"
+						},
+						"result": "French Victory",
+						"location": {
+							"lat": 50.571,
+							"lng": 4.453
+						},
+						"belligerents": {
+							"French Empire": {
+								"nations": ["French Empire"],
+								"strength": 20000,
+								"casualties": 4140
+							},
+							"Seventh Coalition": {
+								"nations": ["United Kingdom", "United Netherlands", "Hanover", "Nassau", "Duchy of Brunswick"],
+								"strength": 36000,
+								"casualties": 4800
+							}
+						}
+					},
+				 {
+						"title": "Battle of Waterloo",
+						"date": {
+							"start": "1815-06-18"
+						},
+						"result": "Decisive Coalition victory",
+						"location": {
+							"lat": 50.68016,
+							"lng": 4.41169
+						},
+						"belligerents": {
+							"French Empire": {
+								"nations": ["French Empire"],
+								"strength": 73000,
+								"casualties": 41000
+							},
+							"Seventh Coalition": {
+								"nations": ["United Kingdom", "Netherlands", "Hanover", "Nassau", "Brunswick", "Prussia"],
+								"strength": 118000,
+								"casualties": 24000
+							}
+						}
+					}, 
+				 {
+						"title": "Battle of Wavre",
+						"date": {
+							"start": "1815-06-18",
+							"end": "1815-06-19"
+						},
+						"result": "French tactical victory, Prussian strategic victory",
+						"location": {
+							"lat": 50.716667,
+							"lng": 4.6
+						},
+						"belligerents": {
+							"French Empire": {
+								"nations": ["French Empire"],
+								"strength": 33000,
+								"casualties": 2500
+							},
+							"Seventh Coalition": {
+								"nations": ["Prussia"],
+								"strength": 17000,
+								"casualties": 2500
+							}
+						}
+					}
+			]
+		}
+
+	},
+
+	"Characters": {
+		"Michel Ney": {
+			"name": "Michel Ney",
+			"surname": "Ney",
+			"nation": "France",
+			"DOB": "10 January 1769",
+			"died": "7 December 1815 (aged 46)",
+			"rank": "Marshal of the Empire",
+			"battles": ["Battle of Leipzig", "Battle of Waterloo"],
+			"short": "One of the original 18 Marshals of the Empire created by Napoleon who nicknamed him le Brave des Braves ('the bravest of the brave').",
+			"bio": "Michel Ney, 1st Duc d'Elchingen, 1st Prince de la Moskowa (10 January 1769 – 7 December 1815), popularly known as Marshal Ney, was a French soldier and military commander during the French Revolutionary Wars and the Napoleonic Wars. He was one of the original 18 Marshals of the Empire created by Napoleon. He was known as Le Rougeaud ('red faced' or 'ruddy') by his men and nicknamed le Brave des Braves ('the bravest of the brave') by Napoleon."
+		},
+		"Jean-de-Dieu Soult": {
+			"name": "Jean-de-Dieu Soult",
+			"surname": "Soult",
+			"nation": "France",
+			"DOB": "29 March 1769",
+			"died": "26 November 1851",
+			"rank": "Marshal of the Empire",
+			"battles": ["Battle of Austerlitz", "Battle of Toulouse"],
+			"bio": "Nicolas Jean-de-Dieu Soult 1st Duke of Dalmatia; 29 March 1769 – 26 November 1851), was a French general and statesman, named Marshal of the Empire in 1804 and often called Marshal Soult. Soult was one of only six officers in French history to receive the distinction of Marshal General of France. The Duke also served three times as President of the Council of Ministers, or Prime Minister of France."
+		},
+		"Gebhard Leberecht von Blücher": {
+			"name": "Gebhard Leberecht von Blücher",
+			"surname": "Blucher",
+			"nation": "Prussia",
+			"DOB": "16 December 1742",
+			"died": "12 September 1819 (aged 76)",
+			"rank": "Generalfeldmarschall",
+			"battles": ["Battle of Ligny", "Battle of Waterloo"],
+			"bio": "Gebhard Leberecht von Blücher, Fürst von Wahlstatt; 16 December 1742 – 12 September 1819), Graf (count), later elevated to Fürst (sovereign prince) von Wahlstatt, was a Prussian Generalfeldmarschall (field marshal). He earned his greatest recognition after leading his army against Napoleon I at the Battle of the Nations at Leipzig in 1813 and the Battle of Waterloo in 1815."
+		},
+		"The Duke of Wellington": {
+			"name": "The Duke of Wellington",
+			"surname": "Wellington",
+			"nation": "United Kingdom",
+			"DOB": "1 May 1769",
+			"died": "14 September 1852 (aged 83)",
+			"rank": "Field Marshal",
+			"battles": ["Battle of Toulouse", "Battle of Quatre Bras", "Battle of Waterloo"],
+			"short": "He rose to prominence during the Peninsular War and became a national hero in Britain after the Napoleonic Wars, during which he led the victorious Anglo-Allied forces at the Battle of Waterloo.",
+			"bio": "Field Marshal Arthur Wellesley, 1st Duke of Wellington, KG, GCB, GCH, PC, FRS (1 May 1769 – 14 September 1852), was an Anglo-Irish soldier and statesman who was one of the leading military and political figures of 19th-century Britain. His defeat of Napoleon at the Battle of Waterloo in 1815 put him in the top rank of Britain's military heroes."
+		}
+	},
+	
+"Flags" : {
+	"Austrian Empire": "Flag_Austrian_Empire.png",
+	"Batavian Republic": "Flag_Batavian_Republic.png",
+	"Duchy of Warsaw": "Flag_Duchy_of_Warsaw.png",
+	"Duchy of Brunswick": "Flag_Duchy_of_Brunswick.png",
+	"Electorate of Bavaria": "Flag_Electorate_of_Bavaria.png", 
+	"Etruria": "Flag_Etruria.png", 
+	"France": "Flag_France.png",
+	"French Empire": "Flag_France.png",
+	"French Kingdom": "Flag_Kingdom_of_France.png",
+	"Hanover": "Flag_Hanover.png", 
+	"Holy Roman Empire": "Flag_Holy_Roman_Empire.png", 	
+	"Napoleonic Italy": "Flag_Napoleonic_Kingdom_of_Italy.png",
+	"Portugal": "Flag_Portugal.png", 
+	"Prussia": "Flag_Prussia.png", 	 
+	"Russian Empire": "Flag_Russia.png", 
+	"United Kingdom": "Flag_United_Kingdom.png",
+	"Kingdom of the Netherlands": "Flag_Netherlands.png", 
+	"Kingdom of Naples": "Flag_Kingdom_of_Naples.png",
+	"Naples": "Flag_Kingdom_of_Naples.png", 
+	"Netherlands": "Flag_Netherlands.png",
+	"Kingdom of Two Sicilies": "Flag_Kingdom_of_the_Two_Sicilies.png",
+	"Kingdom of Sicily": "Flag_Kingdom_of_the_Two_Sicilies.png",
+	"Nassau": "Flag_Nassau.png",
+	"Sardinia": "Flag_Kingdom_of_Sardinia.png", 
+	"Spain": "Flag_Spain.png", 	
+	"Sweden": "Flag_Sweden.png",
+	"Switzerland": "Flag_Switzerland.png",
+	"Tuscany": "Flag_Tuscany.png",
+	"Württemberg": "Flag_Württemberg.png"
+}
+
+}

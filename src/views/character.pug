@@ -1,0 +1,22 @@
+extends ./layout-black.pug
+
+block content        
+    main
+      .profile
+        .profile__img-wrapper
+          img.profile__img(src='/static/img/characters/' + data.surname + '.jpg', alt=data.name)
+        .profile__info
+          h3.profile__heading #{data.name}
+          .profile__details
+            span
+              strong Born: #{data.DOB}
+            |  
+            span
+              strong Died: #{data.died}
+            |  
+            span
+              strong Rank: #{data.rank}
+          .profile__bio
+            p
+              strong Biography:
+
