@@ -65,25 +65,10 @@ app.get('/battles/:name?', function(req, res) {
 	}
 })
 
-// router.use(function(req, res, next) {
-//     if (!req.route)
-//         return next (new Error('404'));  
-//     next();
+
+var port_number = server.listen(process.env.PORT || 3044);
+app.listen(port_number); 
+
+// app.listen(3044, function(){
+// 	console.log("The frontend server is running on port 3044!")
 // });
-
-// app.get('/blog/:title?', function(req, res) {
-// 	// debugger;
-// 	var title = req.params.title;
-// 	if(!title) {
-// 		res.status(503);
-// 		res.send("Get Fucked!")
-// 	} else {
-// 		var post = posts[title];
-// 		res.render('post');		
-// 	}
-
-// })
-
-app.listen(3044, function(){
-	console.log("The frontend server is running on port 3044!")
-});
