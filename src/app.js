@@ -66,8 +66,8 @@ app.get('/battles/:name?', function(req, res) {
 })
 
 
-var port_number = server.listen(process.env.PORT || 3044);
-app.listen(port_number); 
+
+app.listen(process.env.PORT || 3044, () => console.log('All is ok!')); 
 
 // app.listen(3044, function(){
 // 	console.log("The frontend server is running on port 3044!")
