@@ -1,0 +1,139 @@
+.characters {
+	display: flex;
+	flex-direction: column;
+	
+	
+	@include element('heading') {
+		padding-top: $base-spacing;
+		text-align: center;
+	}
+	
+	@include element('list') {
+		display: flex;
+		flex-wrap: wrap;	
+		justify-content: center;
+	}
+	
+	
+	@include element('item') {
+		// @include rounded-box(2px, $smoke, $oil);
+		background: $jet;
+		margin-top: $base-spacing;
+		padding-bottom: $base-spacing;
+		flex: 1 1 100%;
+		position: relative;
+		border-bottom: solid 1px $tuatara;				
+	}
+	
+	@include element('wrapper') {
+		@include outer-container(100%);
+		display: flex;
+		flex-wrap: wrap;
+		/* ================================= 
+		  TABLET
+		==================================== */			
+		@include media ($tablet) {
+			@include outer-container(85%);	
+			flex-wrap: nowrap;	
+		}
+		/* ================================= 
+		  DESKTOP
+		==================================== */				
+		@include media ($desktop) {
+			@include outer-container(85%);
+			flex-wrap: nowrap;	
+		}
+		/* ================================= 
+		  DESKTOP LARGE
+		==================================== */
+		@include media ($desktop-lg) {
+			@include outer-container(1100px);
+			flex-wrap: nowrap;	
+		}												 
+	}
+	
+	@include element('img-wrapper') {
+			align-self: center;
+			flex: 1 1 100%;
+	
+		@include media ($tablet) {	
+			flex: 0 1 400px;			
+		}			
+		
+		@include media ($desktop) {	
+			flex: 0 1 200px;			
+		}	
+	
+	}	
+
+
+	
+	@include element('img') {
+		@include img-responsive();
+		margin: 0 auto;
+		// width: 120px;
+		// height: 180px;
+		position: relative;
+		z-index: 5;
+		border: solid 5px $oil;
+		// flex: 0 0 20%;
+	}	
+
+	@include element('details') {
+		flex: 1 1 100%;
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: 0;
+		margin-top: $base-spacing;
+		/* ================================= 
+		  TABLET
+		==================================== */			
+		@include media ($tablet) {	
+			margin-left: $base-spacing;
+			margin-top: 0;
+		}
+		/* ================================= 
+		  DESKTOP
+		==================================== */				
+		@include media ($desktop) {
+			flex: 1 1 80%;			
+			margin-left: $base-spacing;
+			margin-top: 0;
+		}					
+
+	}	
+
+	@include element('name') {
+		flex: 1 1 60%;
+		color: $smoke;
+	}	
+	@include element('flag') {
+		width: 80px;
+		height: 40px;
+		box-shadow: 0 1px 1px $heavy-shadow;			
+		flex: 0 1 80px;
+	}		
+
+	@include element('rank') {
+		flex: 1 1 100%;
+		color: $aluminum;		
+		align-self: center;
+											
+	}	
+	@include element('short') {
+		color: $smoke;
+		flex: 1 1 100%;							
+	}
+	
+	@include element('link') {
+		font-size: ms(1);
+		color: $jade-gray;
+		flex: 0 1 100px;
+		margin-bottom: $base-spacing / 2;	
+		
+		&:hover {
+			color: $jade;			
+		}			
+	}
+		
+}

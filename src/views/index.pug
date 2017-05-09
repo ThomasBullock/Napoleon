@@ -1,9 +1,10 @@
-extends ./layout-white.pug
+extends ./layout.pug
 
 block content
-    main
-      .hero.wrapper
-        img.hero__img(srcset='/static/img/Coronation_Sm.jpg 480w, /static/img/Coronation_Md.jpg 800w, /static/img/Coronation_Lg.jpg 1200w', src='/static/img/Coronation_Sm.jpg', alt='Coronation of Napoleon')
-      .home.wrapper
-        p.home__intro
-          | This site serves a simple repository for information regarding the Napoleonic Era. All information has been sourced from wikipedia but is presented here hopefully somewhat more interestingly so as to display the colours, campaigns and characters of the Napoleonic Era.
+		main
+			.page
+				.hero.wrapper
+					img.hero__img(sizes='100vw', srcset='/static/img/Coronation_Sm.jpg 480w, /static/img/Coronation_Md.jpg 800w, /static/img/Coronation_Lg.jpg 1200w', src='/static/img/Coronation_Sm.jpg', alt='Coronation of Napoleon')
+				.home.wrapper
+					p.home__intro
+						| This site serves a simple repository for information regarding the Napoleonic Era. All information has been sourced from wikipedia but is presented here hopefully somewhat more interestingly so as to display the colours, campaigns and characters of the Napoleonic Era.

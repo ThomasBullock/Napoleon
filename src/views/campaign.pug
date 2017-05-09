@@ -1,29 +1,31 @@
-extends ./layout-white.pug
+extends ./layout-map.pug
 
 block content
         main
-          #map.map
-          .campaigns__item--margin-top.wrapper
-            .campaigns__facts
-              h2.campaigns__heading #{data.title}
-              |  
-              span.campaigns__date #{data.duration.from} to #{data.duration.to}
-              each key, index in data.belligerents       
-                .campaigns__belligerents
-                    h5= index
-                    ul.campaigns__flags
-                        each nation, index in key
-                            li
-                                img(src='/static/img/flags/' + flags[nation] )
-              p #{data.summary}
-                
-              ul.campaigns__row
-                each link, index in data.battles
-                  if index < 1
-                    li.campaigns__list--first
-                      a.campaigns__battlelink(href='/battles/' + link.title) #{link.title}
-                  else
-                    li.campaigns__list
-                      a.campaigns__battlelink(href='/battles/' + link.title) #{link.title}
-        script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBgmhtgIlAUNMa11QW0uPzFPnsI76OAv64&libraries=places,drawing,geometry&v=3')
+          .page
+            #map.map
+            .campaigns__item--margin-top.wrapper
+              .campaigns__facts
+                h2.campaigns__heading #{data.title}
+                |  
+                span.campaigns__date #{data.duration.from} to #{data.duration.to}
+                each key, index in data.belligerents       
+                  .campaigns__belligerents
+                      h5= index
+                      ul.campaigns__flags
+                          each nation, index in key
+                              li
+                                  img(src='/static/img/flags/' + flags[nation] )
+                p #{data.summary}
+                  
+                ul.campaigns__row
+                  each link, index in data.battles
+                    if index < 1
+                      li.campaigns__list--first
+                        a.campaigns__battlelink(href='/battles/' + link.title) #{link.title}
+                    else
+                      li.campaigns__list
+                        a.campaigns__battlelink(href='/battles/' + link.title) #{link.title}
+        script(type='text/javascript').
+            var local_data =!{JSON.stringify(data)}
          

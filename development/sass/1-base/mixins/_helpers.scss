@@ -1,0 +1,13 @@
+@mixin img-responsive() {
+	max-width: 100%;
+	height: auto;
+	display:block;
+}
+
+@mixin rounded-box($radius : 2px, $color: $smoke, $border-color: $iron) {
+		border-radius: $radius;
+		background: $color;
+		overflow: hidden;
+		border: solid 2px $border-color;	
+}
+

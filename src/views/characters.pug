@@ -1,12 +1,12 @@
-extends ./layout-black.pug
+extends ./layout.pug
 
 block content        
 		main
-			.page
-				h1.page__heading The Characters of The Napoleonic War
+			.page--black
+				h1.page--black__heading The Characters of The Napoleonic War
 				ul.page__list
 					each item in data
-						li.characters__item
+						li.characters__item.wrapper
 							.characters__wrapper
 								.characters__img-wrapper
 									img.characters__img(src='/static/img/characters/' + item.surname + '.jpg', alt=item.name)

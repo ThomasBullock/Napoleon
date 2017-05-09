@@ -1,0 +1,115 @@
+/* ================================= 
+  Variables
+==================================== */
+
+// Media Breakpoints
+$desktop-lg: new-breakpoint(min-width 1400px 12);   //1200px
+$desktop: new-breakpoint(min-width 1025px 12);			// 85%
+$tablet: new-breakpoint(min-width 768px max-width 1024px 12); // 85%
+$phone: new-breakpoint(min-width 320px max-width 767px 12);   // 95%
+
+
+
+// Typography
+@import "fonts";
+
+@include Lato;
+@include Montserrat;
+@include Merriweather;
+@include LibreBaskerville;
+
+
+$base-font-family: $Lato;
+$heading-font-family: $Montserrat;
+
+// Font Sizes
+$base-font-size: 1em;
+
+$modularscale: (
+  base: 1rem,
+  ratio: 1.25
+);
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Colors
+$white         : #FEFEFE !default;
+$ghost         : #FAFAFA !default;
+$snow          : #F9F9F9 !default;
+$vapor         : #F6F6F6 !default;
+$white-smoke   : #F5F5F5 !default;
+$silver        : #EFEFEF !default;
+$smoke         : #EEEEEE !default;
+$gainsboro     : #DDDDDD !default;
+$iron          : #CCCCCC !default;
+$base          : #AAAAAA !default;
+$aluminum      : #999999 !default;
+$jumbo         : #888888 !default;
+$monsoon       : #777777 !default;
+$steel         : #666666 !default;
+$charcoal      : #555555 !default;
+$tuatara       : #444444 !default;
+$oil           : #333333 !default;
+$jet           : #222222 !default;
+$ebony         : #111111 !default;
+$black         : #000000 !default;
+
+$medium-shadow : rgba(34, 34, 34, .5);
+$heavy-shadow : rgba(0, 0, 0, .7); 
+
+$jade: #7ADF9A;
+$jade-dark: #1ACF3A;
+$jade-gray: #ADDDCD;
+$blue: #1565c0;
+$medium-gray: #999;
+$light-gray: #ddd;
+
+/// social media colors ////
+$facebook-blue     : #3b5998;
+$bandcamp-blue     : #629aa9;
+$twitter-blue      : #1da1f2;
+$skype-blue        : #00aff0;      
+$soundcloud-orange : #ff8800;
+$spotify-green     : #2ebd59;
+$snapchat-yellow   : #fffc00;
+$youtube-red       : #cd201f;
+$tumblr-grey       : #35465c;
+$song-kick         : #f80046;
+
+$instagram-blue    : #405de6;
+$instagram-purple  : #833ab4;
+$instagram-orange  : #fcaf45;
+$instagram-yellow  : #ffdc80;
+
+// Font Colors
+$base-font-color: $oil;
+$action-color: #FFF;
+$navigation-color-hover: $twitter-blue;
+// Border
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+
+// Background Colors
+$base-background-color: #fff;
+$secondary-background-color: tint($base-border-color, 75%);
+
+// $medium-shadow: 0 1px 1px rgba(34, 34, 34, .5);
+// $heavy-shadow: 0 3px 2px rgba(0, 0, 0, .7);
+
+// Forms
+$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;
+
+

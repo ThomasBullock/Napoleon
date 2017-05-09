@@ -1,0 +1,45 @@
+
+// <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+// font-family: 'Lato', sans-serif;
+$Lato: 'Lato', sans-serif;
+
+@mixin Lato {
+	@import url('https://fonts.googleapis.com/css?family=Lato');
+}
+
+// <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+// font-family: 'Montserrat', sans-serif;
+
+$Montserrat: 'Montserrat', sans-serif;
+
+@mixin Montserrat {
+	@import url('https://fonts.googleapis.com/css?family=Montserrat');
+}
+
+// <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+// font-family: 'Raleway', sans-serif;
+
+$Raleway: 'Raleway', sans-serif;
+
+@mixin Raleway {
+	@import url('https://fonts.googleapis.com/css?family=Raleway');
+}
+
+$Merriweather: 'Merriweather', serif;
+
+@mixin Merriweather {
+	@import url('https://fonts.googleapis.com/css?family=Merriweather');
+}
+
+
+$DroidSerif: 'Droid Serif', serif;
+
+@mixin DroidSerif {
+	@import url('https://fonts.googleapis.com/css?family=Droid+Serif');
+}
+
+$LibreBaskerville: 'Libre Baskerville', serif;
+
+@mixin LibreBaskerville {
+	@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
+}

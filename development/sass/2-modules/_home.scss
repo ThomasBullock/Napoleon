@@ -1,0 +1,11 @@
+
+
+.home {
+	// padding: $base-spacing;
+	
+	@include element('intro') {
+		font-size: ms(1);
+		margin-top: $base-spacing;
+	}
+	
+}

@@ -1,0 +1,81 @@
+@function set-button-font-color($color) {
+	@if(lightness($color) > 70) {
+		@return $oil;
+	} @else {
+		@return $smoke;
+	}
+} 
+
+
+@function button-gradient($color) {
+	$grad: linear-gradient(180deg, lighten($color, 20%), $color 10%, $color 90%, darken($color, 25%));
+	@return $grad;
+}
+
+
+@mixin button($color) {
+	padding: $base-spacing / 2 $base-spacing;
+	width: 100%;
+	background: $color;
+	color: set-button-font-color($color);
+	border-radius: 2px;
+	box-shadow: 0 1px 1px darken($color, 10%);
+	border-bottom: solid 2px transparent;
+	 
+	
+	&:hover {
+		color: $white;
+		background: darken($color, 15%);
+	}
+	
+	&:active {
+		background: $oil;
+	}
+}
+
+
+@mixin button-simple($color) {
+	color: set-button-font-color($color);	
+	border-radius: $base-border-radius;
+  padding: $small-spacing $base-spacing;
+  background: linear-gradient(180deg, lighten($color, 10%), darken($color, 10%));
+	border-left: 2px solid lighten($color, 20%);
+	border-top: 2px solid lighten($color, 20%);
+	border-bottom: 2px solid darken($color, 20%);
+	border-right: 2px solid darken($color, 20%);  			
+}
+
+
+// @mixin button($color, $gradient) {
+// 	color: set-button-font-color($color);
+// 	border-radius: $base-border-radius;
+//   	padding: $small-spacing $base-spacing;	
+// 	@if($gradient) {
+// 			background: button-gradient($color);
+// 		} @else {
+// 			background-color: $color;			
+// 		}
+// 	border-left: 2px solid lighten($color, 25%);
+// 	border-top:  2px solid lighten($color, 25%);
+// 	border-bottom: 2px solid darken($color, 30%);
+// 	border-right: 2px solid darken($color, 30%);
+// 	// box-shadow: 1px 2px	1px rgba(17, 0, 0, .5);
+// }
+
+
+@mixin button-rnd($color, $gradient, $radius) {
+	color: set-button-font-color($color);
+	padding: $small-spacing $base-spacing;
+	border-radius: $radius;
+	@if($gradient) {
+			background: button-gradient($color);
+		} @else {
+			background-color: $color;			
+		}
+
+	border-left: 2px solid lighten($color, 10%);
+	border-top:  2px solid lighten($color, 10%);
+	border-bottom: 2px solid darken($color, 10%);
+	border-right: 2px solid darken($color, 10%);
+	// box-shadow: 1px 2px	1px rgba(17, 0, 0, .5);
+}

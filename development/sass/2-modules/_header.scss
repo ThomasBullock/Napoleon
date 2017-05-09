@@ -1,0 +1,193 @@
+  $navigation-padding: 1em;
+  $navigation-background: transparent;
+  $navigation-color: transparentize(white, 0.3);
+  $navigation-color-hover: white;
+  $navigation-height: 70px;
+
+
+.header {
+  height: auto;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  background: url('../img/Flag_Banner_Lg.jpg');
+  background-position: 10% 20%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: $base-spacing;
+  box-shadow: 0 3px 2px $heavy-shadow;
+  /* ================================= 
+    DESKTOP
+  ==================================== */     
+  @include media ($desktop) {
+    height: 85px;
+  }   
+  
+  
+  @include element('container') {
+      @include outer-container(100%);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;    
+      align-items: base-line;
+      /* ================================= 
+        DESKTOP
+      ==================================== */    
+      @include media ($desktop) {
+        @include outer-container(85%);
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-end;    
+        align-items: baseline;        
+      }     
+
+  }
+  
+  
+  @include element('heading') {
+    // position: absolute;
+    text-align: center;
+    // left: -500px;
+    font-size: ms(0);
+    margin-bottom: 0;
+    flex: 1 1 50%;
+    // align-self: flex-start;
+    color: transparent;
+    text-shadow: none;
+    
+    
+    /* ================================= 
+      TABLET
+    ==================================== */ 
+    @include media ($tablet) {    
+      color: $vapor;
+      text-shadow: 0 1px 0 rgba(17, 17, 17, .5); 
+    }       
+        
+    /* ================================= 
+      DESKTOP
+    ==================================== */          
+    @include media ($desktop) {
+      font-size: ms(2);
+      color: $vapor;
+      text-shadow: 0 1px 0 rgba(17, 17, 17, .5);      
+    }         
+  }
+
+  @include element('logo') {
+    position: absolute;
+    top: 12px;
+    left: $base-spacing;
+    width: 55px;
+    align-self: flex-start;
+    margin-right: $base-spacing;
+    /* ================================= 
+      DESKTOP
+    ==================================== */          
+    @include media ($desktop) { 
+      top: 20px;    
+    }   
+  } 
+  
+  @include element('nav-menu-button') {
+    display: inline-block;
+    position: absolute;
+    right: $base-spacing;
+    top: 20px;
+    margin: 0;
+    padding-right: 1em;
+    /* ================================= 
+      DESKTOP
+    ==================================== */     
+    @include media ($desktop) {
+      display: none;
+    } 
+    &:focus,
+    &:hover {
+      color: $navigation-color-hover;
+    }           
+  }
+  
+  @include element('nav') {
+    // margin-top: $base-spacing;
+    flex: 1 1 100%; 
+    @include media ($desktop) {
+      margin-top: 0;      
+      flex: 1 1 50%;  
+    }
+
+  }
+  
+  @include element('row') {
+    // margin-top: $base-spacing;    
+    transition: all .5s; 
+    text-align: center;
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 0 auto;
+    overflow: visible;
+    padding: 0;
+    width: 100%;
+    z-index: 9999;
+    height: 0;    
+    
+    &.show {
+      padding-top: $base-spacing;
+      padding-bottom: $base-spacing / 2;      
+      transition: height .4s; 
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      height: 195px;     
+    }
+    /* ================================= 
+      DESKTOP
+    ==================================== */     
+    @include media ($desktop) {
+      display: flex;
+      flex-direction: row;        
+      justify-content: space-between;
+      height: auto;   
+                
+      &.show {
+        flex-direction: row;
+        height: auto;               
+      }   
+    } 
+  }
+  
+  @include element('list') {
+    background: $navigation-background;
+    // line-height: $navigation-height;
+    flex: 1 1 100%;
+    overflow: hidden;
+    width: 100%;
+    z-index: 9999;
+    /* ================================= 
+      DESKTOP
+    ==================================== */     
+    @include media ($desktop) {    
+      overflow: visible;
+    }
+     
+  }
+  
+  
+  @include element('link') {
+    @include button(transparentize($oil, .5));
+    // margin-top: $base-spacing / 2;
+    min-width: 400px;
+    display: block;
+    /* ================================= 
+      DESKTOP
+    ==================================== */     
+    @include media ($desktop) { 
+      display: inline;  
+    }       
+    // color: $gainsboro;
+    // text-shadow: 0 1px 1px rgba(17, 17, 17, .5);
+  }
+}

@@ -1,0 +1,8 @@
+@mixin scale($scale, $origin: 50% 50% 0, $duration: 150ms) {
+	transition: transform $duration;
+	transform-origin: $origin;
+	
+	&:hover {
+		transform: scale($scale);
+	}
+}

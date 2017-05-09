@@ -1,0 +1,50 @@
+	.page {
+
+		background: $white;
+		padding-top: 85px;
+		// padding-left: $base-spacing;
+		// padding-right: $base-spacing;		
+		
+		@include modifier('black') {
+			padding-top: 85px;
+			background: $jet;
+			
+			@include element('heading') {
+				padding-top: $base-spacing;				
+				color: $smoke;
+				text-align: center;
+
+			}			
+		}
+
+		@include element('heading') {
+			padding-top: $base-spacing / 2;
+			margin-bottom: 0;
+			text-align: center;
+	    /* ================================= 
+	      DESKTOP
+	    ==================================== */          
+	    @include media ($desktop) {			
+				padding-top: $base-spacing;
+			}				
+
+		}
+
+		@include element('list') {
+			margin-top: 0;
+			margin-bottom: 0;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+	    /* ================================= 
+	      DESKTOP
+	    ==================================== */          
+	    @include media ($desktop) {			
+				margin-top: $base-spacing;;
+			}	
+	}
+	
+}	
+	
+	
+	

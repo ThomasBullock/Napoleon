@@ -1,0 +1,266 @@
+/* ================================= 
+  Base Styles
+==================================== */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+
+/* ================================= 
+  Typography Styles
+==================================== */
+
+body {
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
+  line-height: $heading-line-height;
+  margin: 0 0 $small-spacing;
+}
+
+h1 {
+  font-size: ms(3);
+  font-family: $LibreBaskerville;
+  /* ================================= 
+    DESKTOP
+  ==================================== */     
+  @include media ($desktop) {
+    font-size: ms(4);  
+  }    
+}
+
+h2 {
+  font-size: ms(2); 
+  font-family: $LibreBaskerville; 
+  /* ================================= 
+    DESKTOP
+  ==================================== */     
+  @include media ($desktop) {
+    font-size: ms(3);  
+  }        
+}
+
+h3 {
+  font-size: ms(1);
+  /* ================================= 
+    DESKTOP
+  ==================================== */     
+  @include media ($desktop) {
+    font-size: ms(2);  
+  }      
+}
+
+h4 {
+  font-size: ms(0);
+  /* ================================= 
+    DESKTOP
+  ==================================== */     
+  @include media ($desktop) {
+    font-size: ms(1);  
+  }      
+}
+
+h5 {
+  font-size: ms(0);
+  /* ================================= 
+    DESKTOP
+  ==================================== */     
+  @include media ($desktop) {
+    font-size: ms(1);  
+  }      
+}
+
+h6 {
+  font-size: ms(-1);
+  /* ================================= 
+    DESKTOP
+  ==================================== */     
+  @include media ($desktop) {
+    font-size: ms(0);  
+  }      
+}
+
+p {
+  margin: 0 0 $small-spacing;
+}
+
+a {
+  color: $action-color;
+  text-decoration: none;
+  transition: color $base-duration $base-timing;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $jade;
+  }
+}
+
+hr {
+  border-bottom: $base-border;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: $base-spacing 0;
+}
+
+/* ================================= 
+  Button Styles
+==================================== */
+
+// button {
+// /*  appearance: none;*/
+// /*  background-color: $action-color;*/
+//   border: 0;
+//   border-radius: $base-border-radius;
+//   color: #fff;
+//   cursor: pointer;
+//   display: inline-block;
+//   font-family: $base-font-family;
+//   font-size: $base-font-size;
+//   -webkit-font-smoothing: antialiased;
+//   font-weight: 600;
+//   line-height: 1;
+//   padding: $small-spacing $base-spacing;
+//   text-align: center;
+//   text-decoration: none;
+// /*  transition: background-color $base-duration $base-timing;*/
+//   user-select: none;
+//   vertical-align: middle;
+//   white-space: nowrap;
+
+//   &:hover,
+//   &:focus {
+//     background-color: shade($action-color, 20%);
+//     color: #fff;
+//   }
+
+//   &:disabled {
+//     cursor: not-allowed;
+//     opacity: 0.5;
+
+//     &:hover {
+//       background-color: $action-color;
+//     }
+//   }
+// }
+
+/* ================================= 
+  Form Styles
+==================================== */
+
+fieldset {
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  font-weight: 600;
+  margin-bottom: $small-spacing / 2;
+  padding: 0;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: $small-spacing / 2;
+}
+
+input,
+select,
+textarea {
+  display: block;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+}
+
+#{$all-text-inputs} {
+  appearance: none;
+  background-color: $base-background-color;
+  border: $base-border;
+  border-radius: $base-border-radius;
+  box-shadow: $form-box-shadow;
+  box-sizing: border-box;
+  margin-bottom: $small-spacing;
+  padding: $base-spacing / 3;
+  transition: border-color $base-duration $base-timing;
+  width: 100%;
+
+  &:hover {
+    border-color: shade($base-border-color, 20%);
+  }
+
+  &:focus {
+    border-color: $action-color;
+    box-shadow: $form-box-shadow-focus;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: shade($base-background-color, 5%);
+    cursor: not-allowed;
+
+    &:hover {
+      border: $base-border;
+    }
+  }
+
+  &::placeholder {
+    color: tint($base-font-color, 40%);
+  }
+}
+
+textarea {
+  resize: vertical;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  display: inline;
+  margin-right: $small-spacing / 2;
+}
+
+[type="file"] {
+  margin-bottom: $small-spacing;
+  width: 100%;
+}
+
+select {
+  margin-bottom: $small-spacing;
+  width: 100%;
+}
