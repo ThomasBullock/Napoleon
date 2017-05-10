@@ -90,6 +90,106 @@
 
 			]
 		},
+		
+		"French invasion of Russia": {
+			"title": "French invasion of Russia",
+			"subtitle": "The French invasion of Russia began on 24 June 1812 when Napoleon's Grande Armée crossed the Neman River in an attempt to engage and defeat the Russian army. Napoleon hoped to compel Tsar Alexander I of Russia to cease trading with British merchants through proxies in an effort to pressure the United Kingdom to sue for peace. The campaign was a turning point in the Napoleonic Wars. The reputation of Napoleon was severely shaken, and French hegemony in Europe was dramatically weakened.",
+			"duration": {
+				"from": "24 June",
+				"to": "14 December 1812"
+			},
+			"belligerents": {
+				"French Empire": ["French Empire", "Duchy of Warsaw", "Kingdom of Italy", "Naples", "Baden", "Bavaria", "Berg", "Saxony", "Westphalia", "Swiss Confederation", "Napoleonic Spain", "Austria", "Prussia", "Denmark–Norway"],
+				"Russian Empire": ["Russian Empire"]
+			},
+			"locations": "Russian Empire",
+			"banner": "Russia_Ney_Retreat_Md",
+			"summary": "The War of the Third Coalition was a European conflict spanning the years 1803 to 1806. During the war, France and its client states under Napoleon I, defeated an alliance, the Third Coalition, made up of the Holy Roman Empire, Russia, Britain and others. Great Britain had already been at war with France following the resumption of hostilities resulting from the breakdown of the Peace of Amiens and remained the only country still at war with France after the Treaty of Pressburg. From 1803–05, Britain stood under constant threat of a French invasion. The Royal Navy, however, secured mastery of the seas and decisively destroyed a Franco-Spanish fleet at the Battle of Trafalgar in October 1805.",
+			"battles": [
+					 {
+						"title": "Napoleon captures Vilnius",
+						"date": {"start": "1812-06-28"},
+						"result": "French victory after light resistance",
+						"location":
+							{ 
+								"lat":54.683333, 
+								"lng":25.283333
+							},
+						"belligerents": {
+							"France": {
+								"nations": ["France"],
+								"strength": 685000,
+								"casualties": 95000
+							},
+							"Russian Empire": {
+								"nations": ["Holy Roman Empire"],
+								"strength": 198250,
+								"casualties": "unknown"
+							}
+						}
+					},
+
+				 {
+						"title": "Battle of Saltanovka",
+						"date": {
+							"start": "1812-07-23"
+						},
+						"result": "French victory",
+						"location": {"lat": 53.9, "lng": 30.3333},
+						"belligerents": {
+							"France": {
+								"nations": ["France", "Kingdom of Spain"],
+								"strength": 20000,
+								"casualties": 2548
+							},
+							"Russian Empire": {
+								"nations": ["United Kingdom"],
+								"strength": 28000,
+								"casualties": 4134
+							}
+						}
+					},
+
+				 {
+						"title": "Battle of Smolensk",
+						"date": {"start": "1812-08-16"},
+						"result": "French tactical victory",
+						"location": {"lat": 54.8027259, "lng": 31.9107321},
+						"belligerents": {
+							"French Empire": {
+								"nations": ["France", "Duchy of Warsaw"],
+								"strength": 200000,
+								"casualties": 10000
+							},
+							"Russian Empire": {
+								"nations": ["Russian Empire"],
+								"strength": 200000,
+								"casualties": 14000
+							}
+						}
+					},
+					
+				 {
+						"title": "Battle of Borodino",
+						"date": {"start" : "1812-09-07"},
+						"result": "French tactical victory",
+						"location": {"lat": 55.516667, "lng": 35.816667},
+						"belligerents": {
+							"French Empire": {
+								"nations": ["France", "Duchy of Warsaw", "Kingdom of Italy"],
+								"strength": 190000,
+								"casualties": 35000
+							},
+							"Russian Empire": {
+								"nations": ["Russian Empire"],
+								"strength": 160000,
+								"casualties": 45000
+							}
+						}
+					}					
+
+			]
+		},		
 
 		"Hundred Days (War of the Seventh Coalition)": {
 			"title": "Hundred Days (War of the Seventh Coalition)",
@@ -251,9 +351,11 @@
 	
 "Flags" : {
 	"Austrian Empire": "Flag_Austrian_Empire.png",
+	"Austria": "Flag_Austrian_Empire.png",	
 	"Baden": "Flag_Baden.png",
+	"Bavaria": "Flag_Bavaria.png",
 	"Batavian Republic": "Flag_Batavian_Republic.png",
-	"Denmark-Norway": "Flag_Denmark.png",
+	"Denmark–Norway": "Flag_Denmark.png",
 	"Duchy of Warsaw": "Flag_Duchy_of_Warsaw.png",
 	"Duchy of Brunswick": "Flag_Duchy_of_Brunswick.png",
 	"Electorate of Bavaria": "Flag_Electorate_of_Bavaria.png", 
@@ -261,6 +363,7 @@
 	"France": "Flag_France.png",
 	"French Empire": "Flag_France.png",
 	"French Kingdom": "Flag_Kingdom_of_France.png",
+	"Berg": "Flag_Grand_Duchy_of_Berg.png",
 	"Grand Duchy of Berg": "Flag_Grand_Duchy_of_Berg.png",
 	"Hanover": "Flag_Hanover.png", 
 	"Holy Roman Empire": "Flag_Holy_Roman_Empire.png", 	
@@ -270,7 +373,8 @@
 	"Prussia": "Flag_Prussia.png", 	 
 	"Russian Empire": "Flag_Russia.png", 
 	"United Kingdom": "Flag_United_Kingdom.png",
-	"Kingdom of the Netherlands": "Flag_Netherlands.png", 
+	"Kingdom of the Netherlands": "Flag_Netherlands.png",
+	"Kingdom of Italy" : "Flag_Napoleonic_Kingdom_of_Italy.png", 
 	"Kingdom of Naples": "Flag_Kingdom_of_Naples.png",
 	"Naples": "Flag_Kingdom_of_Naples.png", 
 	"Netherlands": "Flag_Netherlands.png",

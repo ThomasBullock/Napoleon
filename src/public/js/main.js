@@ -1,303 +1,305 @@
-const styles = [{
-        "featureType": "all",
-        "elementType": "geometry.stroke",
-        "stylers": [{
-            "visibility": "off"
-        }]
-    }, {
-        "featureType": "all",
-        "elementType": "labels",
-        "stylers": [{
-            "visibility": "simplified"
-        }]
-    }, {
-        "featureType": "all",
-        "elementType": "labels.text",
-        "stylers": [{
-            "visibility": "simplified"
-        }]
-    }, {
-        "featureType": "administrative",
-        "elementType": "labels",
-        "stylers": [{
-            "visibility": "off"
-        }]
-    }, {
-        "featureType": "administrative",
-        "elementType": "labels.text",
-        "stylers": [{
-            "visibility": "off"
-        }]
-    }, {
-        "featureType": "administrative.country",
-        "elementType": "all",
-        "stylers": [{
-            "visibility": "off"
-        }]
-    }, {
-        "featureType": "administrative.country",
-        "elementType": "geometry.stroke",
-        "stylers": [{
-            "visibility": "on"
-        }]
-    }, {
-        "featureType": "administrative.country",
-        "elementType": "labels",
-        "stylers": [{
-            "visibility": "on"
-        }, {
-            "saturation": "-70"
-        }, {
-            "lightness": "24"
-        }, {
-            "gamma": "5"
-        }]
-    }, {
-        "featureType": "administrative.country",
-        "elementType": "labels.text.stroke",
-        "stylers": [{
-            "visibility": "on"
-        }]
-    }, {
-        "featureType": "administrative.province",
-        "elementType": "all",
-        "stylers": [{
-            "visibility": "off"
-        }]
-    }, {
-        "featureType": "administrative.province",
-        "elementType": "geometry.stroke",
-        "stylers": [{
-            "visibility": "off"
-        }]
-    }, {
-        "featureType": "administrative.locality",
-        "elementType": "labels",
-        "stylers": [{
-            "visibility": "on"
-        }]
-    }, {
-        "featureType": "administrative.locality",
-        "elementType": "geometry",
-        "stylers": [{
-            "visibility": "off"
-        }]
-    }, {
-        "featureType": "administrative.locality",
-        "elementType": "geometry.stroke",
-        "stylers": [{
-            "visibility": "off"
-        }]
-    }, {
-        "featureType": "administrative.locality",
-        "elementType": "labels.text.fill",
-        "stylers": [{ color: '#d59563' }]
+"use strict";
 
+var styles = [{
+    "featureType": "all",
+    "elementType": "geometry.stroke",
+    "stylers": [{
+        "visibility": "off"
+    }]
+}, {
+    "featureType": "all",
+    "elementType": "labels",
+    "stylers": [{
+        "visibility": "simplified"
+    }]
+}, {
+    "featureType": "all",
+    "elementType": "labels.text",
+    "stylers": [{
+        "visibility": "simplified"
+    }]
+}, {
+    "featureType": "administrative",
+    "elementType": "labels",
+    "stylers": [{
+        "visibility": "off"
+    }]
+}, {
+    "featureType": "administrative",
+    "elementType": "labels.text",
+    "stylers": [{
+        "visibility": "off"
+    }]
+}, {
+    "featureType": "administrative.country",
+    "elementType": "all",
+    "stylers": [{
+        "visibility": "off"
+    }]
+}, {
+    "featureType": "administrative.country",
+    "elementType": "geometry.stroke",
+    "stylers": [{
+        "visibility": "on"
+    }]
+}, {
+    "featureType": "administrative.country",
+    "elementType": "labels",
+    "stylers": [{
+        "visibility": "on"
     }, {
-        "featureType": "administrative.neighborhood",
-        "elementType": "all",
-        "stylers": [{
-            "visibility": "off"
-        }]
+        "saturation": "-70"
     }, {
-        "featureType": "administrative.neighborhood",
-        "elementType": "geometry.stroke",
-        "stylers": [{
-            "visibility": "off"
-        }]
+        "lightness": "24"
     }, {
-        "featureType": "administrative.land_parcel",
-        "elementType": "geometry.stroke",
-        "stylers": [{
-            "visibility": "off"
-        }]
-    }, {
-        "featureType": "administrative.land_parcel",
-        "elementType": "labels",
-        "stylers": [{
-            "visibility": "off"
-        }]
-    }, {
-        "featureType": "landscape",
-        "elementType": "all",
-        "stylers": [{
-            "visibility": "on"
-        }]
-    }, {
-        "featureType": "landscape",
-        "elementType": "geometry.stroke",
-        "stylers": [{
-            "visibility": "off"
-        }]
-    }, {
-        "featureType": "landscape.man_made",
-        "elementType": "all",
-        "stylers": [{
-            "visibility": "off"
-        }]
-    },
-    // {
-    //     "featureType": "landscape.man_made",
-    //     "elementType": "geometry",
-    //     "stylers": [
-    //         {
-    //             "color": "#f7f1df"
-    //         }
-    //     ]
-    // },
-    {
-        "featureType": "landscape.natural",
-        "elementType": "all",
-        "stylers": [{
-            "visibility": "simplified"
-        }]
-    }, {
-        "featureType": "landscape.natural",
-        "elementType": "geometry",
-        "stylers": [{
-            "color": "#d0e3b4"
-        }]
-    }, {
-        "featureType": "landscape.natural",
-        "elementType": "labels",
-        "stylers": [{
-            "visibility": "on"
-        }]
-    }, {
-        "featureType": "landscape.natural.landcover",
-        "elementType": "all",
-        "stylers": [{
-            "visibility": "off"
-        }]
-    }, {
-        "featureType": "landscape.natural.terrain",
-        "elementType": "all",
-        "stylers": [{
-            "visibility": "off"
-        }]
-    }, {
-        "featureType": "landscape.natural.terrain",
-        "elementType": "geometry",
-        "stylers": [{
-            "visibility": "on"
-        }]
-    }, {
-        "featureType": "poi",
-        "elementType": "all",
-        "stylers": [{
-            "visibility": "off"
-        }]
-    }, {
-        "featureType": "poi",
-        "elementType": "geometry.stroke",
-        "stylers": [{
-            "visibility": "off"
-        }]
-    }, {
-        "featureType": "poi",
-        "elementType": "labels",
-        "stylers": [{
-            "visibility": "off"
-        }]
-    }, {
-        "featureType": "poi.business",
-        "elementType": "all",
-        "stylers": [{
-            "visibility": "off"
-        }]
-    }, {
-        "featureType": "poi.medical",
-        "elementType": "geometry",
-        "stylers": [{
-            "color": "#fbd3da"
-        }]
-    }, {
-        "featureType": "poi.park",
-        "elementType": "geometry",
-        "stylers": [{
-            "color": "#bde6ab"
-        }]
-    }, {
-        "featureType": "road",
-        "elementType": "all",
-        "stylers": [{
-            "visibility": "off"
-        }]
-    }, {
-        "featureType": "road",
-        "elementType": "geometry.stroke",
-        "stylers": [{
-            "visibility": "off"
-        }]
-    }, {
-        "featureType": "road",
-        "elementType": "labels",
-        "stylers": [{
-            "visibility": "off"
-        }]
-    }, {
-        "featureType": "road.highway",
-        "elementType": "geometry.fill",
-        "stylers": [{
-            "color": "#ffe15f"
-        }]
-    }, {
-        "featureType": "road.highway",
-        "elementType": "geometry.stroke",
-        "stylers": [{
-            "color": "#efd151"
-        }]
-    }, {
-        "featureType": "road.arterial",
-        "elementType": "geometry.fill",
-        "stylers": [{
-            "color": "#ffffff"
-        }]
-    }, {
-        "featureType": "road.local",
-        "elementType": "geometry.fill",
-        "stylers": [{
-            "color": "black"
-        }]
-    }, {
-        "featureType": "transit",
-        "elementType": "all",
-        "stylers": [{
-            "visibility": "off"
-        }]
-    }, {
-        "featureType": "transit.station.airport",
-        "elementType": "geometry.fill",
-        "stylers": [{
-            "color": "#cfb2db"
-        }]
-    }, {
-        "featureType": "water",
-        "elementType": "geometry",
-        "stylers": [{
-            "color": "#91c9f7"
-        }]
-    }, {
-        "featureType": "water",
-        "elementType": "labels",
-        "stylers": [{
-            "visibility": "off"
-        }]
-    }];
+        "gamma": "5"
+    }]
+}, {
+    "featureType": "administrative.country",
+    "elementType": "labels.text.stroke",
+    "stylers": [{
+        "visibility": "on"
+    }]
+}, {
+    "featureType": "administrative.province",
+    "elementType": "all",
+    "stylers": [{
+        "visibility": "off"
+    }]
+}, {
+    "featureType": "administrative.province",
+    "elementType": "geometry.stroke",
+    "stylers": [{
+        "visibility": "off"
+    }]
+}, {
+    "featureType": "administrative.locality",
+    "elementType": "labels",
+    "stylers": [{
+        "visibility": "on"
+    }]
+}, {
+    "featureType": "administrative.locality",
+    "elementType": "geometry",
+    "stylers": [{
+        "visibility": "off"
+    }]
+}, {
+    "featureType": "administrative.locality",
+    "elementType": "geometry.stroke",
+    "stylers": [{
+        "visibility": "off"
+    }]
+}, {
+    "featureType": "administrative.locality",
+    "elementType": "labels.text.fill",
+    "stylers": [{ color: '#d59563' }]
 
-const month = new Array();
-    month[0] = "January";
-    month[1] = "February";
-    month[2] = "March";
-    month[3] = "April";
-    month[4] = "May";
-    month[5] = "June";
-    month[6] = "July";
-    month[7] = "August";
-    month[8] = "September";
-    month[9] = "October";
-    month[10] = "November";
-    month[11] = "December";
+}, {
+    "featureType": "administrative.neighborhood",
+    "elementType": "all",
+    "stylers": [{
+        "visibility": "off"
+    }]
+}, {
+    "featureType": "administrative.neighborhood",
+    "elementType": "geometry.stroke",
+    "stylers": [{
+        "visibility": "off"
+    }]
+}, {
+    "featureType": "administrative.land_parcel",
+    "elementType": "geometry.stroke",
+    "stylers": [{
+        "visibility": "off"
+    }]
+}, {
+    "featureType": "administrative.land_parcel",
+    "elementType": "labels",
+    "stylers": [{
+        "visibility": "off"
+    }]
+}, {
+    "featureType": "landscape",
+    "elementType": "all",
+    "stylers": [{
+        "visibility": "on"
+    }]
+}, {
+    "featureType": "landscape",
+    "elementType": "geometry.stroke",
+    "stylers": [{
+        "visibility": "off"
+    }]
+}, {
+    "featureType": "landscape.man_made",
+    "elementType": "all",
+    "stylers": [{
+        "visibility": "off"
+    }]
+},
+// {
+//     "featureType": "landscape.man_made",
+//     "elementType": "geometry",
+//     "stylers": [
+//         {
+//             "color": "#f7f1df"
+//         }
+//     ]
+// },
+{
+    "featureType": "landscape.natural",
+    "elementType": "all",
+    "stylers": [{
+        "visibility": "simplified"
+    }]
+}, {
+    "featureType": "landscape.natural",
+    "elementType": "geometry",
+    "stylers": [{
+        "color": "#d0e3b4"
+    }]
+}, {
+    "featureType": "landscape.natural",
+    "elementType": "labels",
+    "stylers": [{
+        "visibility": "on"
+    }]
+}, {
+    "featureType": "landscape.natural.landcover",
+    "elementType": "all",
+    "stylers": [{
+        "visibility": "off"
+    }]
+}, {
+    "featureType": "landscape.natural.terrain",
+    "elementType": "all",
+    "stylers": [{
+        "visibility": "off"
+    }]
+}, {
+    "featureType": "landscape.natural.terrain",
+    "elementType": "geometry",
+    "stylers": [{
+        "visibility": "on"
+    }]
+}, {
+    "featureType": "poi",
+    "elementType": "all",
+    "stylers": [{
+        "visibility": "off"
+    }]
+}, {
+    "featureType": "poi",
+    "elementType": "geometry.stroke",
+    "stylers": [{
+        "visibility": "off"
+    }]
+}, {
+    "featureType": "poi",
+    "elementType": "labels",
+    "stylers": [{
+        "visibility": "off"
+    }]
+}, {
+    "featureType": "poi.business",
+    "elementType": "all",
+    "stylers": [{
+        "visibility": "off"
+    }]
+}, {
+    "featureType": "poi.medical",
+    "elementType": "geometry",
+    "stylers": [{
+        "color": "#fbd3da"
+    }]
+}, {
+    "featureType": "poi.park",
+    "elementType": "geometry",
+    "stylers": [{
+        "color": "#bde6ab"
+    }]
+}, {
+    "featureType": "road",
+    "elementType": "all",
+    "stylers": [{
+        "visibility": "off"
+    }]
+}, {
+    "featureType": "road",
+    "elementType": "geometry.stroke",
+    "stylers": [{
+        "visibility": "off"
+    }]
+}, {
+    "featureType": "road",
+    "elementType": "labels",
+    "stylers": [{
+        "visibility": "off"
+    }]
+}, {
+    "featureType": "road.highway",
+    "elementType": "geometry.fill",
+    "stylers": [{
+        "color": "#ffe15f"
+    }]
+}, {
+    "featureType": "road.highway",
+    "elementType": "geometry.stroke",
+    "stylers": [{
+        "color": "#efd151"
+    }]
+}, {
+    "featureType": "road.arterial",
+    "elementType": "geometry.fill",
+    "stylers": [{
+        "color": "#ffffff"
+    }]
+}, {
+    "featureType": "road.local",
+    "elementType": "geometry.fill",
+    "stylers": [{
+        "color": "black"
+    }]
+}, {
+    "featureType": "transit",
+    "elementType": "all",
+    "stylers": [{
+        "visibility": "off"
+    }]
+}, {
+    "featureType": "transit.station.airport",
+    "elementType": "geometry.fill",
+    "stylers": [{
+        "color": "#cfb2db"
+    }]
+}, {
+    "featureType": "water",
+    "elementType": "geometry",
+    "stylers": [{
+        "color": "#91c9f7"
+    }]
+}, {
+    "featureType": "water",
+    "elementType": "labels",
+    "stylers": [{
+        "visibility": "off"
+    }]
+}];
+
+var month = new Array();
+month[0] = "January";
+month[1] = "February";
+month[2] = "March";
+month[3] = "April";
+month[4] = "May";
+month[5] = "June";
+month[6] = "July";
+month[7] = "August";
+month[8] = "September";
+month[9] = "October";
+month[10] = "November";
+month[11] = "December";
 
 (function (global) {
 
@@ -328,11 +330,9 @@ const month = new Array();
 
 function initMap() {
     console.log('initialize map!');
-    const markers = [];
+    var markers = [];
     var map,
-
-
-    map = new google.maps.Map(document.getElementById('map'), {
+        map = new google.maps.Map(document.getElementById('map'), {
         center: { lat: 48.4085152, lng: 9.9428302 },
         zoom: 5,
         styles: styles,
@@ -362,7 +362,7 @@ function initMap() {
             var marker = new google.maps.Marker({
                 position: position,
                 title: title,
-                date: date, 
+                date: date,
                 result: result,
                 animation: google.maps.Animation.DROP,
                 icon: defaultIcon,
@@ -392,63 +392,54 @@ function initMap() {
         //     this.createRoute(route);
         // }
         showListings(battles);
-    }  // end markers
-    
+    } // end markers
+
     function dateFormat(dateObj) {
 
         var start = new Date(dateObj.start);
-        var end = (dateObj.end) ? new Date(dateObj.end) : null;
+        var end = dateObj.end ? new Date(dateObj.end) : null;
 
-        console.log(start, end)
-        
-        if(!end) {
-            return `${month[start.getMonth()]} ${start.getDate()} ${start.getFullYear()}`
-        } else if(start.getFullYear() === end.getFullYear() && start.getMonth() === end.getMonth()) {
-            return `${month[start.getMonth()]} ${start.getDate()} to ${end.getDate()} ${start.getFullYear()}`            
+        console.log(start, end);
+
+        if (!end) {
+            return month[start.getMonth()] + " " + start.getDate() + " " + start.getFullYear();
+        } else if (start.getFullYear() === end.getFullYear() && start.getMonth() === end.getMonth()) {
+            return month[start.getMonth()] + " " + start.getDate() + " to " + end.getDate() + " " + start.getFullYear();
         }
     }
-    
+
     function populateInfoWindow(marker, infowindow) {
         // Check to make sure the infowindow is not already opened on this marker.
-        if (infowindow.marker != marker) {    
-          // Clear the infowindow content to give the streetview time to load.
-          infowindow.setContent('');
-          infowindow.marker = marker;
-          // Make sure the marker property is cleared if the infowindow is closed.
-          infowindow.addListener('closeclick', function() {
-            infowindow.marker = null;
-          });
-          infowindow.setContent(`<div class="info-window">
-                                    <h2>  ${marker.title} </h2>
-                                    <h5> ${dateFormat(marker.date)}</h5>
-                                    
-                                    <p> ${marker.result} </p>
-                                </div>`);
+        if (infowindow.marker != marker) {
+            // Clear the infowindow content to give the streetview time to load.
+            infowindow.setContent('');
+            infowindow.marker = marker;
+            // Make sure the marker property is cleared if the infowindow is closed.
+            infowindow.addListener('closeclick', function () {
+                infowindow.marker = null;
+            });
+            infowindow.setContent("<div class=\"info-window\">\n                                    <h2>  " + marker.title + " </h2>\n                                    <h5> " + dateFormat(marker.date) + "</h5>\n                                    \n                                    <p> " + marker.result + " </p>\n                                </div>");
 
-          // Open the infowindow on the correct marker.
-          infowindow.open(map, marker);                            
+            // Open the infowindow on the correct marker.
+            infowindow.open(map, marker);
         }
     }
-    
-    
-    
+
     function showListings(info) {
-        
+
         var bounds = new google.maps.LatLngBounds();
-        markers.forEach( (marker) => {
-          marker.setMap(map);
-          bounds.extend(marker.position);            
-        })
+        markers.forEach(function (marker) {
+            marker.setMap(map);
+            bounds.extend(marker.position);
+        });
         map.fitBounds(bounds);
-        console.log(info);                
+        console.log(info);
     }
 
     var data = [{ "title": "Battle of Ulm", "location": { "lat": 48.4085152, "lng": 9.9428302 }, "date": { "start": "1805-10-15", "end": "1805-10-20" }, "result": "Decisive French victory" }, { "title": "Battle of Trafalgar", "location": { "lat": 36.327282, "lng": -6.215012 }, "date": { "start": "1805-10-21" }, "result": "Decisive British victory" }, { "title": "Battle of Austerlitz", "location": { "lat": 49.1410606, "lng": 16.7668404 }, "date": { "start": "1805-12-02" }, "result": "Decisive French victory" }];
 
     createMarkerList(local_data.battles, null, null);
 }
-
-
 
 // getLocalData(local_data.battles);
 
