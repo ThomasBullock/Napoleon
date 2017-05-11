@@ -316,6 +316,17 @@
 			"short": "One of the original 18 Marshals of the Empire created by Napoleon who nicknamed him le Brave des Braves ('the bravest of the brave').",
 			"bio": "Michel Ney, 1st Duc d'Elchingen, 1st Prince de la Moskowa (10 January 1769 – 7 December 1815), popularly known as Marshal Ney, was a French soldier and military commander during the French Revolutionary Wars and the Napoleonic Wars. He was one of the original 18 Marshals of the Empire created by Napoleon. He was known as Le Rougeaud ('red faced' or 'ruddy') by his men and nicknamed le Brave des Braves ('the bravest of the brave') by Napoleon."
 		},
+		"Jean Lannes": {
+			"name": "Jean Lannes",
+			"surname": "Lannes",
+			"nation": "France",
+			"DOB": "10 April 1769",
+			"died": "31 May 1809 (aged 40)",
+			"rank": "General of Division",
+			"battles": ["Battle of Saalfeld", "Battle of Friedland", "Second Siege of Zaragoza", "Battle of Aspern-Essling"],
+			"short": "Jean Lannes was one of Napoleon's most daring and talented generals. Napoleon once commented on Lannes: 'I found him a pygmy and left him a giant'.",
+			"bio": "Jean Lannes was one of Napoleon's most daring and talented generals. Napoleon once commented on Lannes: 'I found him a pygmy and left him a giant'. A personal friend of the emperor, he was allowed to address him with the familiar 'tu', as opposed to the formal 'vous'."
+		},		
 		"Jean-de-Dieu Soult": {
 			"name": "Jean-de-Dieu Soult",
 			"surname": "Soult",
@@ -324,7 +335,7 @@
 			"died": "26 November 1851",
 			"rank": "Marshal of the Empire",
 			"battles": ["Battle of Austerlitz", "Battle of Toulouse"],
-			"bio": "Nicolas Jean-de-Dieu Soult 1st Duke of Dalmatia; 29 March 1769 – 26 November 1851), was a French general and statesman, named Marshal of the Empire in 1804 and often called Marshal Soult. Soult was one of only six officers in French history to receive the distinction of Marshal General of France. The Duke also served three times as President of the Council of Ministers, or Prime Minister of France."
+			"short": "Named Marshal of the Empire in 1804 and often called Marshal Soult. Soult was one of only six officers in French history to receive the distinction of Marshal General of France."
 		},
 		"Gebhard Leberecht von Blücher": {
 			"name": "Gebhard Leberecht von Blücher",
@@ -336,6 +347,16 @@
 			"battles": ["Battle of Ligny", "Battle of Waterloo"],
 			"bio": "Gebhard Leberecht von Blücher, Fürst von Wahlstatt; 16 December 1742 – 12 September 1819), Graf (count), later elevated to Fürst (sovereign prince) von Wahlstatt, was a Prussian Generalfeldmarschall (field marshal). He earned his greatest recognition after leading his army against Napoleon I at the Battle of the Nations at Leipzig in 1813 and the Battle of Waterloo in 1815."
 		},
+		"Mikhail Kutuzov": {
+			"name": "Mikhail Kutuzov",
+			"surname": "Kutuzov",
+			"nation": "Russian Empire",
+			"DOB": "16 September 1745",
+			"died": "28 April 1813 (aged 67)",
+			"rank": "Field Marshal",
+			"battles": ["Battle of Austerlitz", "Battle of Borodino", "Battle of Maloyaroslavets"],
+			"short": "Mikhail Kutuzov served as one of the finest military officers and diplomats of Russia under the reign of three Romanov Tsars: Catherine II, Paul I and Alexander I. Kutuzov is considered to have been one of the best Russian generals."
+		},		
 		"The Duke of Wellington": {
 			"name": "The Duke of Wellington",
 			"surname": "Wellington",
