@@ -1385,6 +1385,287 @@ select {
     .characters__link:hover {
       color: #7ADF9A; }
 
+/* ================================= 
+	  TABLET
+	==================================== */
+/* ================================= 
+	  DESKTOP
+	==================================== */
+.battle {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .battle__item {
+    padding-bottom: 1.5em;
+    border-bottom: solid 1px #DDDDDD;
+    margin: 1.5em;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 100%;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    /* ================================= 
+			  DESKTOP
+			==================================== */ }
+    @media screen and (min-width: 1025px) {
+      .battle__item {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: nowrap;
+            -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap; } }
+    .battle__item--margin-top {
+      margin-top: 1.5em;
+      padding: 1.5em;
+      border-bottom: solid 1px #DDDDDD;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1 100%;
+          -ms-flex: 1 1 100%;
+              flex: 1 1 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: nowrap;
+          -ms-flex-wrap: nowrap;
+              flex-wrap: nowrap; }
+  .battle__img-wrapper {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 100%;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    /* ================================= 
+			  DESKTOP
+			==================================== */ }
+    @media screen and (min-width: 1025px) {
+      .battle__img-wrapper {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 1 40%;
+            -ms-flex: 0 1 40%;
+                flex: 0 1 40%; } }
+  .battle__img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: solid 3px #333333; }
+  .battle__facts {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 100%;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    /* ================================= 
+			  DESKTOP
+			==================================== */ }
+    @media screen and (min-width: 1025px) {
+      .battle__facts {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 60%;
+            -ms-flex: 1 1 60%;
+                flex: 1 1 60%; } }
+    .battle__facts--margin-left {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1 60%;
+          -ms-flex: 1 1 60%;
+              flex: 1 1 60%;
+      margin-top: 1.5em;
+      margin-left: 0;
+      /* ================================= 
+				  DESKTOP
+				==================================== */ }
+      @media screen and (min-width: 1025px) {
+        .battle__facts--margin-left {
+          margin-top: 0;
+          margin-left: 1.5em; } }
+  .battle__heading {
+    -webkit-align-self: baseline;
+        -ms-flex-item-align: baseline;
+            align-self: baseline;
+    display: inline-block;
+    margin-right: 0.75em;
+    margin-bottom: 0;
+    color: #333333; }
+  .battle__sub {
+    -webkit-align-self: baseline;
+        -ms-flex-item-align: baseline;
+            align-self: baseline;
+    display: inline-block;
+    margin-right: 0.75em;
+    margin-bottom: 0;
+    color: #333333; }
+  .battle__strong {
+    font-weight: 700;
+    color: #333333; }
+  .battle__date {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 25%;
+        -ms-flex: 0 1 25%;
+            flex: 0 1 25%;
+    -webkit-align-self: baseline;
+        -ms-flex-item-align: baseline;
+            align-self: baseline;
+    color: #666666;
+    margin-top: 0; }
+  .battle__locations {
+    display: block;
+    font-size: 1rem;
+    font-weight: 100;
+    margin-bottom: 0.75em;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 100%;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    color: #666666; }
+  .battle__summary {
+    margin-top: 1.5em;
+    display: block;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 100%;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    color: #333333;
+    margin-bottom: 1.5em; }
+  .battle__row {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 100%;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    /* ================================= 
+			  TABLET
+			==================================== */
+    /* ================================= 
+			  DESKTOP
+			==================================== */ }
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      .battle__row {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between; } }
+    @media screen and (min-width: 1025px) {
+      .battle__row {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+            -ms-flex-pack: start;
+                justify-content: flex-start; } }
+  .battle__battlelink {
+    color: #999999;
+    padding-right: 0.75em; }
+  .battle__belligerents {
+    color: #666666;
+    margin-top: 1.5em;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 100%;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    /* ================================= 
+			  DESKTOP
+			==================================== */ }
+  .battle__flags {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    /* ================================= 
+			  DESKTOP
+			==================================== */ }
+    .battle__flags li {
+      margin-right: 0.75em; }
+    .battle__flags img {
+      width: 40px;
+      height: 26px;
+      -webkit-box-shadow: 0 1px 1px rgba(34, 34, 34, 0.5);
+              box-shadow: 0 1px 1px rgba(34, 34, 34, 0.5); }
+    @media screen and (min-width: 1025px) {
+      .battle__flags img {
+        width: 60px;
+        height: 40px; } }
+  .battle__link {
+    font-size: 1.25rem;
+    color: #ADDDCD;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 100px;
+        -ms-flex: 0 1 100px;
+            flex: 0 1 100px;
+    margin-bottom: 0.75em; }
+    .battle__link:hover {
+      color: #7ADF9A; }
+  .battle__name {
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center; }
+
 body {
   font-family: 'Lato', sans-serif; }
 
