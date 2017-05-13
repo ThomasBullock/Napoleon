@@ -183,9 +183,10 @@
 
 				
 		@include element('list') {
-			// margin-left: $base-spacing / 4;
+			margin-left: $base-spacing;
 				@include modifier('first') {
-					// margin-left: 0;
+					font-weight: 700;
+					color: $ebony;
 				}
 		}	
 		
@@ -248,7 +249,28 @@
 
 		@include element('name') {
 			align-self: center;		
-		}	
+		}
+
+
+		@include element('gallery') {	
+			width: 100%;
+			background: $jet;
+			min-height: 200px;
+		}
+
+		@include element('gallery-list') {	
+			display: flex;
+			justify-content: space-between;
+			align-items: center; 
+			padding: $base-spacing;
+		}
+
+		@include element('gallery-thumb') {	
+			@include img-responsive();
+
+		}				
+
+				
 			
 		
 	}	
