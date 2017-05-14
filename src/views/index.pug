@@ -8,3 +8,19 @@ block content
 				.home.wrapper
 					p.home__intro
 						| This site serves a simple repository for information regarding the Napoleonic Era. All information has been sourced from wikipedia but is presented here hopefully somewhat more interestingly so as to display the colours, campaigns and characters of the Napoleonic Era.
+					.dynamic-row
+						.dynamic-row__item
+							.dynamic-row__img
+								include ./partials/_tombstone.pug
+							.dynamic-row__content
+								a.dynamic-row__link(href='/characters/Napoleon')
+									h4.dynamic-row__heading Napoleon Bonaparte
+								p.dynamic-row__text Died on this day in 1821
+						.dynamic-row__item
+							.dynamic-row__img
+								include ./partials/_battlefield.pug
+							.dynamic-row__content
+								a.dynamic-row__link(href='/characters/Napoleon')
+									h4.dynamic-row__heading Napoleon Bonaparte
+								p.dynamic-row__text Died on this day in 1821								
+							

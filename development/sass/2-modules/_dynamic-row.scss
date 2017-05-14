@@ -1,0 +1,33 @@
+.dynamic-row {
+	display: flex;
+	justify-content: space-between;
+	padding-top: $base-spacing;
+
+	@include element('item') {
+		flex: 1 1 200px;
+		display: flex;
+	}	
+	
+	@include element('content') {
+		align-self: center;
+		margin-left: $base-spacing / 2;
+	}				
+	
+	@include element('heading') {
+		color: $oil;
+		
+		&:hover {
+			color: $jade;
+		}
+	}	
+	
+	@include element('text') {
+		font-size: ms(1);
+	}
+	
+	@include element('link') {
+
+	}			
+	
+}	
+	

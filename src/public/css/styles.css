@@ -920,6 +920,53 @@ select {
   font-size: 1.25rem;
   margin-top: 1.5em; }
 
+.dynamic-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 1.5em; }
+  .dynamic-row__item {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 200px;
+        -ms-flex: 1 1 200px;
+            flex: 1 1 200px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .dynamic-row__content {
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    margin-left: 0.75em; }
+  .dynamic-row__heading {
+    color: #333333; }
+    .dynamic-row__heading:hover {
+      color: #7ADF9A; }
+  .dynamic-row__text {
+    font-size: 1.25rem; }
+
+.tombstone-color {
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s; }
+  .tombstone-color:hover {
+    fill: #7ADF9A; }
+
+svg {
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s; }
+  svg:hover > .cavalry-red {
+    fill: #7ADF9A; }
+  svg:hover > .cavalry-blue {
+    fill: #7ADF9A; }
+
 /* ================================= 
 	  TABLET
 	==================================== */

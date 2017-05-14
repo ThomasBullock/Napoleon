@@ -1,0 +1,21 @@
+.tombstone-color {
+	transition: all 1s;
+	
+	&:hover {
+		fill: $jade;
+	}
+}
+
+
+svg {
+	transition: all 1s;
+	&:hover > .cavalry-red {
+			fill: $jade;	
+	}
+
+	&:hover > .cavalry-blue {
+			fill: $jade;		
+	}	
+	
+}
+
