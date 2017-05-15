@@ -16,6 +16,30 @@
 			"summary": "The War of the Third Coalition was a European conflict spanning the years 1803 to 1806. During the war, France and its client states under Napoleon I, defeated an alliance, the Third Coalition, made up of the Holy Roman Empire, Russia, Britain and others. Great Britain had already been at war with France following the resumption of hostilities resulting from the breakdown of the Peace of Amiens and remained the only country still at war with France after the Treaty of Pressburg. From 1803–05, Britain stood under constant threat of a French invasion. The Royal Navy, however, secured mastery of the seas and decisively destroyed a Franco-Spanish fleet at the Battle of Trafalgar in October 1805.",
 			"battles": [
 					 {
+						"title": "Battle of Poo",
+						"date": {
+							"start": "1805-05-15",
+							"end": "1805-06-15"
+						},
+						"result": "Decisive French victory",
+						"location": {
+							"lat": 48.4085152,
+							"lng": 9.9428302
+						},
+						"belligerents": {
+							"France": {
+								"nations": ["France"],
+								"strength": 80000,
+								"casualties": 1500
+							},
+							"Holy Roman Empire": {
+								"nations": ["Holy Roman Empire"],
+								"strength": 40000,
+								"casualties": 4000
+							}
+						}
+					},				
+					 {
 						"title": "Battle of Ulm",
 						"date": {
 							"start": "1805-10-15",
@@ -305,12 +329,23 @@
 	},
 
 	"Characters": {
+		"Fury Palms": {
+			"name": "Fury Palms",
+			"surname": "Ney",
+			"nation": "France",
+			"DOB": "1769-01-10",
+			"died": "1815-05-15",
+			"rank": "Marshal of the Empire",
+			"battles": ["Battle of Leipzig", "Battle of Waterloo"],
+			"short": "One of the original 18 Marshals of the Empire created by Napoleon who nicknamed him le Brave des Braves ('the bravest of the brave').",
+			"bio": "Michel Ney, 1st Duc d'Elchingen, 1st Prince de la Moskowa (10 January 1769 – 7 December 1815), popularly known as Marshal Ney, was a French soldier and military commander during the French Revolutionary Wars and the Napoleonic Wars. He was one of the original 18 Marshals of the Empire created by Napoleon. He was known as Le Rougeaud ('red faced' or 'ruddy') by his men and nicknamed le Brave des Braves ('the bravest of the brave') by Napoleon."
+		},		
 		"Michel Ney": {
 			"name": "Michel Ney",
 			"surname": "Ney",
 			"nation": "France",
-			"DOB": "10 January 1769",
-			"died": "7 December 1815 (aged 46)",
+			"DOB": "1769-01-10",
+			"died": "1815-12-07",
 			"rank": "Marshal of the Empire",
 			"battles": ["Battle of Leipzig", "Battle of Waterloo"],
 			"short": "One of the original 18 Marshals of the Empire created by Napoleon who nicknamed him le Brave des Braves ('the bravest of the brave').",
@@ -320,8 +355,8 @@
 			"name": "Jean Lannes",
 			"surname": "Lannes",
 			"nation": "France",
-			"DOB": "10 April 1769",
-			"died": "31 May 1809 (aged 40)",
+			"DOB": "1769-04-10",
+			"died": "1809-05-31",
 			"rank": "General of Division",
 			"battles": ["Battle of Saalfeld", "Battle of Friedland", "Second Siege of Zaragoza", "Battle of Aspern-Essling"],
 			"short": "Jean Lannes was one of Napoleon's most daring and talented generals. Napoleon once commented on Lannes: 'I found him a pygmy and left him a giant'.",
@@ -337,12 +372,22 @@
 			"battles": ["Battle of Austerlitz", "Battle of Toulouse"],
 			"short": "Named Marshal of the Empire in 1804 and often called Marshal Soult. Soult was one of only six officers in French history to receive the distinction of Marshal General of France."
 		},
+		"Joachim Murat": {
+			"name": "Joachim Murat",
+			"surname": "Murat",
+			"nation": "France",
+			"DOB": "1767-03-25",
+			"died": "1815-10-13",
+			"rank": "Marshal of the Empire",
+			"battles": ["Battle of Leipzig"],
+			"short": "Napoleon's brother-in-law through marriage to his younger sister, Caroline Bonaparte, he was noted as a daring, brave, and charismatic cavalry officer as well as a flamboyant dresser and was known as 'the Dandy King.'"
+		},		
 		"Gebhard Leberecht von Blücher": {
 			"name": "Gebhard Leberecht von Blücher",
 			"surname": "Blucher",
 			"nation": "Prussia",
 			"DOB": "16 December 1742",
-			"died": "12 September 1819 (aged 76)",
+			"died": "12 September 1819",
 			"rank": "Generalfeldmarschall",
 			"battles": ["Battle of Ligny", "Battle of Waterloo"],
 			"bio": "Gebhard Leberecht von Blücher, Fürst von Wahlstatt; 16 December 1742 – 12 September 1819), Graf (count), later elevated to Fürst (sovereign prince) von Wahlstatt, was a Prussian Generalfeldmarschall (field marshal). He earned his greatest recognition after leading his army against Napoleon I at the Battle of the Nations at Leipzig in 1813 and the Battle of Waterloo in 1815."
@@ -352,7 +397,7 @@
 			"surname": "Kutuzov",
 			"nation": "Russian Empire",
 			"DOB": "16 September 1745",
-			"died": "28 April 1813 (aged 67)",
+			"died": "28 April 1813",
 			"rank": "Field Marshal",
 			"battles": ["Battle of Austerlitz", "Battle of Borodino", "Battle of Maloyaroslavets"],
 			"short": "Mikhail Kutuzov served as one of the finest military officers and diplomats of Russia under the reign of three Romanov Tsars: Catherine II, Paul I and Alexander I. Kutuzov is considered to have been one of the best Russian generals."

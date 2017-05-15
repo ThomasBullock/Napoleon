@@ -14,13 +14,13 @@ block content
 								include ./partials/_tombstone.pug
 							.dynamic-row__content
 								a.dynamic-row__link(href='/characters/Napoleon')
-									h4.dynamic-row__heading Napoleon Bonaparte
-								p.dynamic-row__text Died on this day in 1821
+									h4.dynamic-row__heading #{died[0].name}
+								p.dynamic-row__text Died on this day #{died[0].niceDate}
 						.dynamic-row__item
 							.dynamic-row__img
 								include ./partials/_battlefield.pug
 							.dynamic-row__content
 								a.dynamic-row__link(href='/characters/Napoleon')
-									h4.dynamic-row__heading Napoleon Bonaparte
-								p.dynamic-row__text Died on this day in 1821								
+									h4.dynamic-row__heading #{battles[0].title}
+								p.dynamic-row__text Started on this day #{battles[0].niceDate}								
 							

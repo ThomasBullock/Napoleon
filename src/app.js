@@ -1,17 +1,57 @@
 'use strict'
 
+const express = require('express'),
+			pug = require('pug'),
+			moment = require('moment');
+
 var data = require('./data/data.json');
 
-var siteData = Object.keys(data).map(function(item) { return data[item] });
+// var siteData = Object.keys(data).map(function(item) { return data[item] });
+
+
+// console.log(today);
+// console.log(moment);
 
 var characters = Object.keys(data.Characters).map(function(item) { return data.Characters[item] } );
 var campaigns = Object.keys(data.Campaigns).map(function(item) { return data.Campaigns[item]} );
 var flags = data.Flags;
+
+var todaysEvents = thisDayIn(campaigns, characters);
+
 // console.log(campaigns)
 // console.log(flags);
 
-const express = require('express'),
-			pug = require('pug');
+function thisDayIn(campaigns, characters) {
+
+	const today = moment();
+
+	var battlesToday = [];
+	var diedToday = [];
+
+	for(var i = 0; i < campaigns.length; i++)  {
+		campaigns[i].battles.forEach(function(item) {
+			if( today.month() === moment(item.date.start).month() &&  today.date() === moment(item.date.start).date() ) {
+				console.log(`this month!! ${item.title}`)
+				item.niceDate = moment(item.date.start).format("MMM Do YYYY");
+				battlesToday.push(item)
+			}			
+		})	
+		console.log(battlesToday)
+	}
+
+	characters.forEach(function(item) {
+		if( today.month() === moment(item.died).month() &&  today.date() === moment(item.died).date() ) {
+			console.log(`this month!! ${item.name}`)
+			item.niceDate = moment(item.died).format("MMM Do YYYY");
+			diedToday.push(item)
+		}			
+	})
+
+	return {
+		died: diedToday,
+		battles: battlesToday
+	}	
+}
 
 
 var app = express();
@@ -23,7 +63,7 @@ app.set('views', __dirname + '/views');
 
 app.get('/', function(req, res){
 	// res.sendFile(__dirname + '/public/index.html');
-	res.render('index');
+	res.render('index', todaysEvents);
 })
 
 
