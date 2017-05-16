@@ -1,20 +1,65 @@
 .dynamic-row {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	padding-top: $base-spacing;
 
+  /* ================================= 
+    DESKTOP
+  ==================================== */     
+	  @include media ($desktop) {
+	  	flex-wrap: nowrap;
+	  }		
+
+
 	@include element('item') {
-		flex: 1 1 200px;
+		flex: 1 1 100%;
 		display: flex;
+		&:first-child {
+			margin-top: 0;
+		}
+
+
+		margin-top: $base-spacing;
+
+  /* ================================= 
+    DESKTOP
+  ==================================== */     
+	  @include media ($desktop) {	
+			flex: 1 1 200px;
+			justify-content: center;
+	  	margin-top: 0;				
+			&:first-child {
+				margin-right: $base-spacing;
+			}
+		}
 	}	
 	
+	@include element('img') {
+		flex: 1 1 50%;
+		svg {
+			@include img-responsive();
+			// max-width: 180px;
+			// margin: 0 auto;
+		}
+
+	}
+
 	@include element('content') {
-		align-self: center;
+		padding-top: $base-spacing;
+		width: 100%;
 		margin-left: $base-spacing / 2;
+		// border: solid 1px $oil;
 	}				
-	
+
 	@include element('heading') {
+
 		color: $oil;
+		
+	}	
+	
+	@include element('sub-heading') {
+		color: $charcoal;
 		
 		&:hover {
 			color: $jade;
@@ -22,7 +67,14 @@
 	}	
 	
 	@include element('text') {
-		font-size: ms(1);
+		font-size: ms(0);
+  /* ================================= 
+    DESKTOP
+  ==================================== */     
+	  @include media ($desktop) {	
+	  	font-size: ms(1);
+	  }		
+
 	}
 	
 	@include element('link') {

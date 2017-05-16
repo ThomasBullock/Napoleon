@@ -11,16 +11,37 @@ block content
 					.dynamic-row
 						.dynamic-row__item
 							.dynamic-row__img
-								include ./partials/_tombstone.pug
+								if diedToday
+									include ./partials/_tombstone.pug
+								else if bornToday	
+									include ./partials/_stork.pug	
+								else
+									include ./partials/_napoleon.pug
 							.dynamic-row__content
-								a.dynamic-row__link(href='/characters/Napoleon')
-									h4.dynamic-row__heading #{died[0].name}
-								p.dynamic-row__text Died on this day #{died[0].niceDate}
+								if diedToday
+									h4.dynamic-row__heading Died on this day #{diedToday.niceDate}									
+									a.dynamic-row__link(href='/characters/' + diedToday.name)
+										h5.dynamic-row__sub-heading #{diedToday.name}
+								else if bornToday
+									h4.dynamic-row__heading Born on this day #{bornToday.niceDate}			
+									a.dynamic-row__link(href='/characters/' + bornToday.name)
+										h5.dynamic-row__sub-heading #{bornToday.name}
+								else
+									h4.dynamic-row__heading Quote of the day										 	
+									a.dynamic-row__link(href='/characters/' + randomGeneral.name)
+										h5.dynamic-row__sub-heading #{randomGeneral.name}
+									p.dynamic-row__text '#{randomGeneral.dailyQuote}'									
 						.dynamic-row__item
 							.dynamic-row__img
 								include ./partials/_battlefield.pug
 							.dynamic-row__content
-								a.dynamic-row__link(href='/characters/Napoleon')
-									h4.dynamic-row__heading #{battles[0].title}
-								p.dynamic-row__text Started on this day #{battles[0].niceDate}								
+								if battleToday
+									h4.dynamic-row__heading Started on this day #{battleToday.niceDate}									
+									a.dynamic-row__link(href='/battles/' + battleToday.title)
+										h5.dynamic-row__sub-heading The #{battleToday.title}
+								else 
+									h4.dynamic-row__heading Todays random battle												
+									a.dynamic-row__link(href='/battles/' + randomBattle.title)
+										h5.dynamic-row__sub-heading The #{randomBattle.title}
+									p.dynamic-row__text #{randomBattle.niceDate}										
 							

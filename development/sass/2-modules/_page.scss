@@ -10,9 +10,15 @@
 			background: $jet;
 			
 			@include element('heading') {
-				padding-top: $base-spacing;				
+				padding-top: $base-spacing / 2;				
 				color: $smoke;
 				text-align: center;
+	    /* ================================= 
+	      DESKTOP
+	    ==================================== */          
+		    @include media ($desktop) {			
+					padding-top: $base-spacing / 1.5;
+		    }				
 
 			}			
 		}
@@ -25,7 +31,7 @@
 	      DESKTOP
 	    ==================================== */          
 	    @include media ($desktop) {			
-				padding-top: $base-spacing;
+				padding-top: $base-spacing / 1.5;
 			}				
 
 		}

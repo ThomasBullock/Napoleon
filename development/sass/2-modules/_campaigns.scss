@@ -1,36 +1,6 @@
 
-	// .campaigns {
-	// 	display: flex;
-	// 	flex-direction: column;
-
-	// 	@include element('img') {
-	// 		@include img-responsive();
-	// 		border: solid 3px $oil;
-	// 	}		
-	
-	// }
-
-	/* ================================= 
-	  TABLET
-	==================================== */
-	
-	// .campaigns {
-	// 	display: flex;
-	// 	flex-direction: column;
-		
-
-
-	// 	@include element('facts') {
-		
-	// 	}	
-	// }
-	
-	/* ================================= 
-	  DESKTOP
-	==================================== */
 
 	.campaigns {
-		// @include outer-container(99%);
 		display: flex;
 		flex-direction: column;
 
@@ -49,7 +19,7 @@
 				display: flex;
 				flex-wrap: nowrap;
 			}			
-			@include modifier('margin-top') {
+			@include modifier('margin-top') {  // possibly redundant!!
 				margin-top: $base-spacing;
 				padding: $base-spacing;
 				border-bottom: solid 1px $gainsboro;
