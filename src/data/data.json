@@ -366,8 +366,8 @@
 			"name": "Jean-de-Dieu Soult",
 			"surname": "Soult",
 			"nation": "France",
-			"DOB": "29 March 1769",
-			"died": "26 November 1851",
+			"DOB": "1769-03-29",
+			"died": "1851-11-26",
 			"rank": "Marshal of the Empire",
 			"battles": ["Battle of Austerlitz", "Battle of Toulouse"],
 			"short": "Named Marshal of the Empire in 1804 and often called Marshal Soult. Soult was one of only six officers in French history to receive the distinction of Marshal General of France."
@@ -386,8 +386,8 @@
 			"name": "Gebhard Leberecht von Blücher",
 			"surname": "Blucher",
 			"nation": "Prussia",
-			"DOB": "16 December 1742",
-			"died": "12 September 1819",
+			"DOB": "1742-12-16",
+			"died": "1819-09-12",
 			"rank": "Generalfeldmarschall",
 			"battles": ["Battle of Ligny", "Battle of Waterloo"],
 			"bio": "Gebhard Leberecht von Blücher, Fürst von Wahlstatt; 16 December 1742 – 12 September 1819), Graf (count), later elevated to Fürst (sovereign prince) von Wahlstatt, was a Prussian Generalfeldmarschall (field marshal). He earned his greatest recognition after leading his army against Napoleon I at the Battle of the Nations at Leipzig in 1813 and the Battle of Waterloo in 1815."
@@ -396,8 +396,8 @@
 			"name": "Mikhail Kutuzov",
 			"surname": "Kutuzov",
 			"nation": "Russian Empire",
-			"DOB": "16 September 1745",
-			"died": "28 April 1813",
+			"DOB": "1745-09-16",
+			"died": "1813-04-28",
 			"rank": "Field Marshal",
 			"battles": ["Battle of Austerlitz", "Battle of Borodino", "Battle of Maloyaroslavets"],
 			"short": "Mikhail Kutuzov served as one of the finest military officers and diplomats of Russia under the reign of three Romanov Tsars: Catherine II, Paul I and Alexander I. Kutuzov is considered to have been one of the best Russian generals."
@@ -406,13 +406,24 @@
 			"name": "The Duke of Wellington",
 			"surname": "Wellington",
 			"nation": "United Kingdom",
-			"DOB": "1 May 1769",
-			"died": "14 September 1852 (aged 83)",
+			"DOB": "1769-05-01",
+			"died": "1852-09-14",
 			"rank": "Field Marshal",
 			"battles": ["Battle of Toulouse", "Battle of Quatre Bras", "Battle of Waterloo"],
 			"short": "He rose to prominence during the Peninsular War and became a national hero in Britain after the Napoleonic Wars, during which he led the victorious Anglo-Allied forces at the Battle of Waterloo.",
 			"bio": "Field Marshal Arthur Wellesley, 1st Duke of Wellington, KG, GCB, GCH, PC, FRS (1 May 1769 – 14 September 1852), was an Anglo-Irish soldier and statesman who was one of the leading military and political figures of 19th-century Britain. His defeat of Napoleon at the Battle of Waterloo in 1815 put him in the top rank of Britain's military heroes."
-		}
+		},
+		"William Ponsonby": {
+			"name": "William Ponsonby",
+			"surname": "Ponsonby",
+			"nation": "United Kingdom",
+			"DOB": "1775-10-13",
+			"died": "1815-06-18",
+			"rank": "Major-General",
+			"battles": ["Battle of Salamanca", "Battle of Waterloo"],
+			"short": "Major-General Sir William Ponsonby KCB was an Irish politician and British Army officer who served in the Peninsula War and was killed at the Battle of Waterloo.",
+			"bio": "Field Marshal Arthur Wellesley, 1st Duke of Wellington, KG, GCB, GCH, PC, FRS (1 May 1769 – 14 September 1852), was an Anglo-Irish soldier and statesman who was one of the leading military and political figures of 19th-century Britain. His defeat of Napoleon at the Battle of Waterloo in 1815 put him in the top rank of Britain's military heroes."
+		}		
 	},
 	
 "Flags" : {
