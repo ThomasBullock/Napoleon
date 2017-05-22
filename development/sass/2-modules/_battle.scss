@@ -1,33 +1,4 @@
 
-	// .campaigns {
-	// 	display: flex;
-	// 	flex-direction: column;
-
-	// 	@include element('img') {
-	// 		@include img-responsive();
-	// 		border: solid 3px $oil;
-	// 	}		
-	
-	// }
-
-	/* ================================= 
-	  TABLET
-	==================================== */
-	
-	// .campaigns {
-	// 	display: flex;
-	// 	flex-direction: column;
-		
-
-
-	// 	@include element('facts') {
-		
-	// 	}	
-	// }
-	
-	/* ================================= 
-	  DESKTOP
-	==================================== */
 
 	.battle {
 		// @include outer-container(99%);
@@ -78,9 +49,8 @@
 			display: flex;
 			flex-wrap: wrap;
 			align-items: flex-start; 
-			// flex-direction: column;
 			flex: 1 1 100%;
-			// margin-left: $base-spacing;				
+		
 			/* ================================= 
 			  DESKTOP
 			==================================== */			
@@ -124,6 +94,15 @@
 			margin-bottom: 0;			
 			color: $oil;
 		}	
+
+		@include element('manpower') {
+			display: flex;
+			flex: 0 0 20%;
+			// justify-content: space-between;
+			> span {
+				margin-right: $base-spacing; 
+			}
+		}		
 		
 		@include element('strong') {
 			font-weight: 700;
@@ -146,9 +125,17 @@
 			flex: 1 1 100%;
 			color: $steel;
 		}			
+
+		@include element('summary-title') {
+			margin-top: $base-spacing;
+			// display: block;
+			// flex: 1 1 100%;
+			// color: $oil;
+			margin-bottom: $base-spacing / 2;											
+		}
 		
 		@include element('summary') {
-			margin-top: $base-spacing;
+			// margin-top: $base-spacing;
 			display: block;
 			flex: 1 1 100%;
 			color: $oil;

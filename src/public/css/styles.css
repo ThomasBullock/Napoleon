@@ -870,6 +870,29 @@ select {
       .header__link {
         display: inline; } }
 
+.hero {
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  background: #EEEEEE;
+  overflow: hidden;
+  border: solid 2px #333333;
+  position: relative;
+  margin-top: 1.5em; }
+  .hero__img {
+    max-width: 100%;
+    height: auto;
+    display: block; }
+  .hero__heading {
+    text-align: center;
+    margin: 1.5em auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: #F6F6F6;
+    text-shadow: 0 1px 1px rgba(17, 17, 17, 0.5); }
+
 .page {
   background: #FEFEFE;
   padding-top: 85px; }
@@ -1478,12 +1501,6 @@ svg {
     .characters__link:hover {
       color: #7ADF9A; }
 
-/* ================================= 
-	  TABLET
-	==================================== */
-/* ================================= 
-	  DESKTOP
-	==================================== */
 .battle {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1621,6 +1638,17 @@ svg {
     margin-right: 0.75em;
     margin-bottom: 0;
     color: #333333; }
+  .battle__manpower {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 20%;
+        -ms-flex: 0 0 20%;
+            flex: 0 0 20%; }
+    .battle__manpower > span {
+      margin-right: 1.5em; }
   .battle__strong {
     font-weight: 700;
     color: #333333; }
@@ -1644,8 +1672,10 @@ svg {
         -ms-flex: 1 1 100%;
             flex: 1 1 100%;
     color: #666666; }
-  .battle__summary {
+  .battle__summary-title {
     margin-top: 1.5em;
+    margin-bottom: 0.75em; }
+  .battle__summary {
     display: block;
     -webkit-box-flex: 1;
     -webkit-flex: 1 1 100%;
@@ -1856,29 +1886,6 @@ body {
 ==================================== */
 main {
   width: 100%; }
-
-.hero {
-  -webkit-border-radius: 2px;
-          border-radius: 2px;
-  background: #EEEEEE;
-  overflow: hidden;
-  border: solid 2px #333333;
-  position: relative;
-  margin-top: 1.5em; }
-  .hero__img {
-    max-width: 100%;
-    height: auto;
-    display: block; }
-  .hero__heading {
-    text-align: center;
-    margin: 1.5em auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    color: #F6F6F6;
-    text-shadow: 0 1px 1px rgba(17, 17, 17, 0.5); }
 
 .profile {
   display: -webkit-box;

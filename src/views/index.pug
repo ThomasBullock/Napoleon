@@ -37,11 +37,11 @@ block content
 							.dynamic-row__content
 								if battleToday
 									h4.dynamic-row__heading Started on this day #{battleToday.niceDate}									
-									a.dynamic-row__link(href='/battles/' + battleToday.title)
+									a.dynamic-row__link(href='/campaigns/' + battleToday.title)
 										h5.dynamic-row__sub-heading The #{battleToday.title}
 								else 
 									h4.dynamic-row__heading Todays random battle												
-									a.dynamic-row__link(href='/battles/' + randomBattle.title)
+									a.dynamic-row__link(href='/campaigns/Hundred Days (War of the Seventh Coalition)/' + randomBattle.title)
 										h5.dynamic-row__sub-heading The #{randomBattle.title}
 									p.dynamic-row__text #{randomBattle.niceDate}										
 							

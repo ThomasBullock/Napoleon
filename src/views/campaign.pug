@@ -22,10 +22,10 @@ block content
                   each link, index in data.battles
                     if index < 1
                       li.campaigns__list--first
-                        a.campaigns__battlelink(href='/battles/' + link.title) #{link.title}
+                        a.campaigns__battlelink(href='/campaigns/' + data.title + '/' + link.title) #{link.title}
                     else
                       li.campaigns__list
-                        a.campaigns__battlelink(href='/battles/' + link.title) #{link.title}
+                        a.campaigns__battlelink(href='/campaigns/' + data.title + '/' + link.title) #{link.title}
         script(type='text/javascript').
             var local_data =!{JSON.stringify(data)}
          

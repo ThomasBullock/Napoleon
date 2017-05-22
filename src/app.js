@@ -34,7 +34,8 @@ function thisDayIn(campaigns, characters) {
 
 
 	for(var i = 0; i < campaigns.length; i++)  {
-		campaigns[i].battles.forEach(function(item) {
+		const battlesArray = Array.from(campaigns[i].battles)
+		battlesArray.forEach(function(item) {
 			if( today.month() === moment(item.date.start).month() &&  today.date() === moment(item.date.start).date() ) {
 				item.niceDate = moment(item.date.start).format("MMM Do YYYY");
 				battlesToday.push(item)
@@ -53,8 +54,11 @@ function thisDayIn(campaigns, characters) {
 	})
 
 	if (battlesToday[0] === undefined) {
-		randomBattle = campaigns[random(campaigns.length)].battles[random(campaigns[0].battles.length)];
+		// randomBattle = campaigns[random(campaigns.length)].battles[random(campaigns[0].battles.length)];
+		// randomBattle.niceDate = moment(randomBattle.date.start).format("MMM Do YYYY");
+		randomBattle = campaigns[2].battles["Battle of Waterloo"];
 		randomBattle.niceDate = moment(randomBattle.date.start).format("MMM Do YYYY");
+
 	}
 
 	if (diedToday[0] === undefined) {
@@ -110,12 +114,23 @@ app.get('/characters/:name?', function(req, res) {
 	}
 })
 
-app.get('/battles/:name?', function(req, res) {
-	var title = req.params.name;	
-	if(!title) {
+app.get('/battles/', function(req, res) {
+	// var campaign = req.params.name;	
+	// var battle = req.params.battle
+	// console.log(data.Campaigns[campaign])
+
+	res.render('construction')	
+
+})
+
+app.get('/campaigns/:name?/:battle', function(req, res) {
+	var campaign = req.params.name;	
+	var battle = req.params.battle
+	console.log(data.Campaigns[campaign])
+	if(!battle) {
 		res.render('construction')	
 	} else {
-		res.render('construction')		
+		res.render('battle', {data: data.Campaigns[campaign].battles[battle], flags: flags})		
 	}
 })
 

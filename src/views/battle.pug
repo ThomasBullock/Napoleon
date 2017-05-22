@@ -1,0 +1,53 @@
+extends ./layout.pug
+
+block content        
+		main
+			.page
+				if data.banner
+					.hero.wrapper
+						img.hero__img(src='/static/img/campaigns/' + data.banner + '.jpg', alt='Napoleonic Painting')
+				.battle__item.wrapper
+					.battle__facts
+						h2.battle__heading #{data.title}
+						span.battle__date #{data.date.start}
+						each key, index in data.belligerents
+							.battle__belligerents
+								h5 #{index}
+								ul.battle__flags
+									each nation, index in key.nations
+										li
+												img(src='/static/img/flags/' + flags[nation] )                
+								ul.battle__row
+									li.battle__list--first Commanders:
+									each commander, index in key.commanders
+										li.battle__list
+											a.battle__battlelink(href='/characters/' + commander) #{commander}
+								.battle__manpower
+									span
+										span.battle__strong Strength: 
+										| #{key.strength}
+									span
+										span.battle__strong Casualties: 
+										| #{key.casualties}
+						if data.description				
+							.battle__summary
+								each section, index in data.description
+									h3.battle__summary-title #{section.heading}
+									each entry in section.paragraphs
+										p
+											| #{entry}
+									else 
+										p there are no values
+			if data.paintings									 
+				.battle__gallery
+					ul.battle__gallery-list.wrapper
+						each painting in data.paintings 
+							li.battle__gallery-item
+								img.battle__gallery-thumb(src='/static/img/battles/' + painting.link + '_Sm.jpg' , alt=painting.title)
+                         
+
+
+
+
+					
+

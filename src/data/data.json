@@ -14,8 +14,10 @@
 			"locations": "Central Europe, Italy, and Atlantic Ocean",
 			"banner": "Napoleon_Francis",
 			"summary": "The War of the Third Coalition was a European conflict spanning the years 1803 to 1806. During the war, France and its client states under Napoleon I, defeated an alliance, the Third Coalition, made up of the Holy Roman Empire, Russia, Britain and others. Great Britain had already been at war with France following the resumption of hostilities resulting from the breakdown of the Peace of Amiens and remained the only country still at war with France after the Treaty of Pressburg. From 1803–05, Britain stood under constant threat of a French invasion. The Royal Navy, however, secured mastery of the seas and decisively destroyed a Franco-Spanish fleet at the Battle of Trafalgar in October 1805.",
-			"battles": [			
-					 {
+			"battles": {
+
+				"Battle of Ulm":	
+				 {
 						"title": "Battle of Ulm",
 						"date": {
 							"start": "1805-10-15",
@@ -29,19 +31,23 @@
 						"belligerents": {
 							"France": {
 								"nations": ["France"],
+								"commanders": ["Napoleon Bonaparte"],											
 								"strength": 80000,
 								"casualties": 1500
 							},
 							"Holy Roman Empire": {
 								"nations": ["Holy Roman Empire"],
+								"commanders": ["Karl Freiherr Mack von Leiberich"],											
 								"strength": 40000,
 								"casualties": 4000
 							}
 						}
 					},
 
+				"Battle of Trafalgar":
 				 {
 						"title": "Battle of Trafalgar",
+						"banner" : "Trafalgar_Lg",
 						"date": {
 							"start": "1805-10-21"
 						},
@@ -53,19 +59,34 @@
 						"belligerents": {
 							"France": {
 								"nations": ["France", "Kingdom of Spain"],
+								"commanders": ["Pierre-Charles Villeneuve", "Federico Gravina"],										
 								"strength": "41 ships",
 								"casualties": 1666
 							},
 							"United Kingdom": {
 								"nations": ["United Kingdom"],
+								"commanders": ["Horatio Nelson", "Cuthbert Collingwood"],										
 								"strength": "33 Ships",
 								"casualties": 13781
 							}
-						}
+						},
+						"paintings": [
+							{
+								"artist": "Auguste Mayer",
+								"title": "unknown (HMS Sandwich fighting the French flagship Bucentaure)",
+								"link": "Trafalgar_Auguste_Mayer"
+							 },
+							{
+								"artist": "Denis Dighton",
+								"title": "Fall of Nelson",
+								"link": "Fall_of_Nelson"
+							 }							 
+						]						
 					},
-
-				 {
+				"Battle of Austerlitz" :
+				 	{
 						"title": "Battle of Austerlitz",
+						"banner": "Austerlitz_Lg",
 						"date": {
 							"start": "1805-12-02"
 						},
@@ -77,18 +98,72 @@
 						"belligerents": {
 							"France": {
 								"nations": ["France"],
+								"commanders": ["Napoleon Bonaparte", "Michel Ney"],			
 								"strength": 75000,
 								"casualties": 8245
 							},
 							"Allies": {
-								"nations": ["Russia", "Holy Roman Empire"],
+								"nations": ["Russian Empire", "Holy Roman Empire"],
+								"commanders": ["Alexander I", "Mikhail Kutuzov", "Francis II"],				
 								"strength": 89400,
 								"casualties": 36000
 							}
-						}
-					}
+						},
+						"description" : [
+							{
+								"heading": "Battle",
+								"paragraphs": [
+									"The battle began with the French army outnumbered. Napoleon had some 72,000 men and 157 guns for the impending battle, with about 7,000 troops under Davout still far to the south in the direction of Vienna.[29][30] The Allies had about 85,000 soldiers, seventy percent of them Russian, and 318 guns.",
+									"At first, Napoleon was not totally confident of victory. In a letter written to Minister of Foreign Affairs Talleyrand, Napoleon requested Talleyrand not tell anyone about the upcoming battle because he did not want to disturb Empress Joséphine. According to Frederick C. Schneid, the French Emperor's chief worry was how he could explain to Joséphine a French defeat."				
+								] 
+							},
+							{
+								"heading": "Allied plans and dispositions",
+								"paragraphs": [
+									"An Allied council met on 1 December to discuss proposals for the battle. Most of the Allied strategists had two fundamental ideas in mind: making contact with the enemy and securing the southern flank that held the communication line to Vienna. Although the Tsar and his immediate entourage pushed hard for a battle, Emperor Francis of Austria was more cautious and, as mentioned, he was seconded by Kutuzov, the Commander-in-chief of the Russians and the Allied troops. The pressure to fight from the Russian nobles and the Austrian commanders, however, was too strong, and the Allies adopted the plan of the Austrian Chief-of-Staff, Franz von Weyrother.[33] This called for a main drive against the French right flank, which the Allies noticed was lightly guarded, and diversionary attacks against the French left. The Allies deployed most of their troops into four columns that would attack the French right. The Russian Imperial Guard was held in reserve while Russian troops under Bagration guarded the Allied right. The Russian Tsar rudely stripped the authority of Commander-in-chief M. I. Kutuzov and gave it to Franz von Weyrother. In the battle, Kutuzov could only command the IV Corps of the Allied army, although he was still the de facto commander because the Tsar was afraid to take over in case his favoured plan failed."
+								] 
+							},
+							{
+								"heading": "French plans and dispositions",
+								"paragraphs": [
+									"Napoleon was hoping that the Allied forces would attack, and to encourage them, he deliberately weakened his right flank.[34] On 28 November Napoleon met with his marshals at Imperial Headquarters, who informed him of their qualms about the forthcoming battle. He shrugged off their suggestion of retreat.",
+									"Napoleon's plan envisaged that the Allies would throw many troops to envelop his right flank in order to cut the French communication line from Vienna.[23] As a result, the Allies' centre and left flank would be exposed and become vulnerable.[36] To encourage them to do so, Napoleon abandoned the strategic position on the Pratzen Heights, faking the weakness of his forces and his own caution. Meanwhile, Napoleon's main force was to be concealed in a dead ground opposite the Heights. According to the plan, the French troops would attack and recapture the Pratzen Heights, then from the Heights they would launch a decisive assault to the center of the Allied army, cripple them, and encircle them from the rear."
+								] 
+							},
+							{
+								"heading": "Battle Begins",
+								"paragraphs": [
+									"The battle began at about 8 a.m. with the first allied column attacking the village of Telnitz, which was defended by the 3rd Line Regiment. This sector of the battlefield witnessed heavy fighting in this early action as several ferocious Allied charges evicted the French from the town and forced them onto the other side of the Goldbach. The first men of Davout's corps arrived at this time and threw the Allies out of Telnitz before they too were attacked by hussars and re-abandoned the town. Additional Allied attacks out of Telnitz were checked by French artillery.",
+									"Allied columns started pouring against the French right, but not at the desired speed, so the French were mostly successful in curbing the attacks. Actually, the Allied deployments were mistaken and poorly timed: cavalry detachments under Liechtenstein on the Allied left flank had to be placed in the right flank and in the process they ran into and slowed down part of the second column of infantry that was advancing towards the French right.[35] At the time, the planners thought this slowing was disastrous, but later on it helped the Allies. Meanwhile, the leading elements of the second column were attacking the village of Sokolnitz, which was defended by the 26th Light Regiment and the Tirailleurs, French skirmishers. Initial Allied assaults proved unsuccessful and General Langeron ordered the bombardment of the village. This deadly barrage forced the French out, and at about the same time, the third column attacked the castle of Sokolnitz. The French, however, counterattacked and regained the village, only to be thrown out again. Conflict in this area ended temporarily when Friant's division (part of III Corps) retook the village. Sokolnitz was perhaps the most fought over area in the battlefield and would change hands several times as the day progressed."
+								] 
+							},
+							{
+								"heading": "One sharp blow and the war is over",
+								"paragraphs": [
+									"At about 8:45 a.m., satisfied at the weakness in the enemy centre, Napoleon asked Soult how long it would take for his men to reach the Pratzen Heights, to which the Marshal replied, 'Less than twenty minutes, sire.' About 15 minutes later, Napoleon ordered the attack, adding, 'One sharp blow and the war is over.'",
+									"A dense fog helped to cloud the advance of St. Hilaire's French division, but as they went up the slope the legendary 'Sun of Austerlitz' ripped the mist apart and encouraged them forward.[41] Russian soldiers and commanders on top of the heights were stunned to see so many French troops coming towards them.[43] Allied commanders moved some of the delayed detachments of the fourth column into this bitter struggle. Over an hour of fighting destroyed much of this unit. The other men from the second column, mostly inexperienced Austrians, also participated in the struggle and swung the numbers against one of the best fighting forces in the French army, eventually forcing them to withdraw down the slopes. However, gripped by desperation, St. Hilaire's men struck hard once more and bayoneted the Allies out of the heights. To the north, General Vandamme's division attacked an area called Staré Vinohrady ('Old Vineyards') and, through talented skirmishing and deadly volleys, broke several Allied battalions.",
+									"The battle had firmly turned in France's favour, but it was far from over. Napoleon ordered Bernadotte's I Corps to support Vandamme's left and moved his own command center from Žuráň Hill to St. Anthony's Chapel on the Pratzen Heights. The difficult position of the Allies was confirmed by the decision to send in the Russian Imperial Guard; Grand Duke Constantine, Tsar Alexander's brother, commanded the Guard and counterattacked in Vandamme's section of the field, forcing a bloody effort and the only loss of a French standard in the battle (a battalion of the 4th Line Regiment was defeated). Sensing trouble, Napoleon ordered his own heavy Guard cavalry forward. These men pulverized their Russian counterparts, but with both sides pouring in large masses of cavalry, no victory was clear.",
+									"The Russians had a numerical advantage but soon the tide swung as Drouet's Division, the 2nd of Bernadotte's I Corps, deployed on the flank of the action and allowed French cavalry to seek refuge behind their lines. The horse artillery of the Guard also inflicted heavy casualties on the Russian cavalry and fusiliers. The Russians broke and many died as they were pursued by the reinvigorated French cavalry for about a quarter of a mile.[45] The casualties of the Russians in Pratzen included Kutuzov (severely wounded) and his son-in-law Ferdinand von Tiesenhausen (KIA)."
+								] 
+							}																																			
 
-			]
+						],
+						"paintings": [
+							{
+								"artist": "William Sadler",
+								"title": "Battle of Waterloo 1815",
+								"link": "Battle_of_Waterloo"
+							 },
+							{
+								"artist": "Adolph Northen",
+								"title": "The Prussian attack on Plancenoit",
+								"link": "Prussian_Attack_Plancenoit"
+							 }							 
+						]
+					}											
+					
+
+			}
 		},
 		
 		"French invasion of Russia": {
@@ -105,7 +180,9 @@
 			"locations": "Russian Empire",
 			"banner": "Russia_Ney_Retreat_Md",
 			"summary": "The War of the Third Coalition was a European conflict spanning the years 1803 to 1806. During the war, France and its client states under Napoleon I, defeated an alliance, the Third Coalition, made up of the Holy Roman Empire, Russia, Britain and others. Great Britain had already been at war with France following the resumption of hostilities resulting from the breakdown of the Peace of Amiens and remained the only country still at war with France after the Treaty of Pressburg. From 1803–05, Britain stood under constant threat of a French invasion. The Royal Navy, however, secured mastery of the seas and decisively destroyed a Franco-Spanish fleet at the Battle of Trafalgar in October 1805.",
-			"battles": [
+			"battles": {
+
+				"Napoleon captures Vilnius":
 					 {
 						"title": "Napoleon captures Vilnius",
 						"date": {"start": "1812-06-28"},
@@ -118,39 +195,43 @@
 						"belligerents": {
 							"France": {
 								"nations": ["France"],
+								"commanders": ["Napoleon Bonaparte", "Michel Ney"],										
 								"strength": 685000,
 								"casualties": 95000
 							},
 							"Russian Empire": {
-								"nations": ["Holy Roman Empire"],
+								"nations": ["Russia"],
+								"commanders": ["Various"],										
 								"strength": 198250,
 								"casualties": "unknown"
 							}
 						}
 					},
-
-				 {
+				"Battle of Saltanovka" :
+				 	{
 						"title": "Battle of Saltanovka",
 						"date": {
-							"start": "1812-05-23"
+							"start": "1812-07-23"
 						},
 						"result": "French victory",
 						"location": {"lat": 53.9, "lng": 30.3333},
 						"belligerents": {
-							"France": {
-								"nations": ["France", "Kingdom of Spain"],
+							"Russian Empire": {
+								"nations": ["Russia"],
+								"commanders": ["Nikolay Raevsky"],										
 								"strength": 20000,
 								"casualties": 2548
 							},
-							"Russian Empire": {
-								"nations": ["United Kingdom"],
+							"French Empire": {
+								"nations": ["France"],
+								"commanders": ["Louis Nicolas Davout"],									
 								"strength": 28000,
 								"casualties": 4134
 							}
 						}
 					},
-
-				 {
+				"Battle of Smolensk" :
+				 	{
 						"title": "Battle of Smolensk",
 						"date": {"start": "1812-08-16"},
 						"result": "French tactical victory",
@@ -158,18 +239,20 @@
 						"belligerents": {
 							"French Empire": {
 								"nations": ["France", "Duchy of Warsaw"],
+								"commanders": ["Napoleon Bonaparte"],									
 								"strength": 200000,
 								"casualties": 10000
 							},
 							"Russian Empire": {
 								"nations": ["Russian Empire"],
+								"commanders": ["Barclay de Tolly", "Pyotr Bagration"],										
 								"strength": 200000,
 								"casualties": 14000
 							}
 						}
 					},
-					
-				 {
+				"Battle of Borodino" :
+					 {
 						"title": "Battle of Borodino",
 						"date": {"start" : "1812-09-07"},
 						"result": "French tactical victory",
@@ -177,18 +260,20 @@
 						"belligerents": {
 							"French Empire": {
 								"nations": ["France", "Duchy of Warsaw", "Kingdom of Italy"],
+								"commanders": ["Napoleon Bonaparte", "Michel Ney", "Joachim Murat", "Eugène de Beauharnais"],											
 								"strength": 190000,
 								"casualties": 35000
 							},
 							"Russian Empire": {
 								"nations": ["Russian Empire"],
+								"commanders": ["Mikhail Kutuzov", "Barclay de Tolly", "Pyotr Bagration"],									
 								"strength": 160000,
 								"casualties": 45000
 							}
 						}
 					}					
 
-			]
+			}
 		},		
 
 		"Hundred Days (War of the Seventh Coalition)": {
@@ -205,7 +290,9 @@
 			"locations": "France, present-day Belgium, present-day Italy",
 			"banner": "Waterloo",
 			"summary": "The Hundred Days marked the period between Napoleon's return from exile on the island of Elba to Paris on 20 March 1815 and the second restoration of King Louis XVIII on 8 July 1815 (a period of 111 days).[a] This period saw the War of the Seventh Coalition, and includes the Waterloo Campaign, the Neapolitan War as well as several other minor campaigns. The phrase les Cent Jours (the hundred days) was first used by the prefect of Paris, Gaspard, comte de Chabrol, in his speech welcoming the king back to Paris on 8 July.  Napoleon returned while the Congress of Vienna was sitting. On 13 March, seven days before Napoleon reached Paris, the powers at the Congress of Vienna declared him an outlaw, and on 25 March Austria, Prussia, Russia and the United Kingdom, members of the Seventh Coalition, bound themselves to put 150,000 men each into the field to end his rule.[5] This set the stage for the last conflict in the Napoleonic Wars, the defeat of Napoleon at the Battle of Waterloo, the restoration of the French monarchy for the second time and the permanent exile of Napoleon to the distant island of Saint Helena, where he died in May 1821.",
-			"battles": [
+			"battles": {
+
+				"Battle of Ligny" :
 					{
 						"title": "Battle of Ligny",
 						"date": {
@@ -219,16 +306,21 @@
 						"belligerents": {
 							"French Empire": {
 								"nations": ["French Empire"],
+								"commanders": ["Napoleon Bonaparte"],											
+
 								"strength": 60800,
 								"casualties": 12000
 							},
 							"Seventh Coalition": {
 								"nations": ["Prussia"],
+								"commanders": ["Gebhard Leberecht von Blücher"],											
 								"strength": 84000,
 								"casualties": 12000
 							}
 						}
 					},
+
+				"Battle of Quatre Bras"	:
 				 {
 						"title": "Battle of Quatre Bras",
 						"date": {
@@ -242,18 +334,23 @@
 						"belligerents": {
 							"French Empire": {
 								"nations": ["French Empire"],
+								"commanders": ["Michel Ney"],										
 								"strength": 20000,
 								"casualties": 4140
 							},
 							"Seventh Coalition": {
 								"nations": ["United Kingdom", "United Netherlands", "Hanover", "Nassau", "Duchy of Brunswick"],
+								"commanders": ["Duke of Wellington", "Prince William of Orange", "Frederick William, Duke of Brunswick-Wolfenbüttel"],									
 								"strength": 36000,
 								"casualties": 4800
 							}
 						}
 					},
+
+				"Battle of Waterloo":
 				 {
 						"title": "Battle of Waterloo",
+						"banner": "Waterloo_Lg",
 						"date": {
 							"start": "1815-06-18"
 						},
@@ -265,17 +362,46 @@
 						"belligerents": {
 							"French Empire": {
 								"nations": ["French Empire"],
+								"commanders": ["Napoleon Bonaparte", "Michel Ney"],
 								"strength": 73000,
 								"casualties": 41000
 							},
 							"Seventh Coalition": {
 								"nations": ["United Kingdom", "Netherlands", "Hanover", "Nassau", "Brunswick", "Prussia"],
+								"commanders": ["The Duke of Wellington", "Gebhard Leberecht von Blücher"],
 								"strength": 118000,
 								"casualties": 24000
 							}
-						}
-					}, 
-				 {
+						},
+						"description" : [
+							{
+								"heading": "Armies",
+								"paragraphs": [
+									"Three armies were involved in the battle: Napoleon's Armée du Nord, a multinational army under Wellington, and a Prussian army under Blücher.",
+									"The French army of around 69,000 consisted of 48,000 infantry, 14,000 cavalry, and 7,000 artillery with 250 guns. Napoleon had used conscription to fill the ranks of the French army throughout his rule, but he did not conscript men for the 1815 campaign. His troops were mainly veterans with considerable experience and a fierce devotion to their Emperor.[24] The cavalry in particular was both numerous and formidable, and included fourteen regiments of armoured heavy cavalry, and seven of highly versatile lancers who were armed with lances, sabres and firearms.",
+									"Wellington later said that he had 'an infamous army, very weak and ill-equipped, and a very inexperienced Staff'. His troops consisted of 67,000 men: 50,000 infantry, 11,000 cavalry, and 6,000 artillery with 150 guns. Of these, 25,000 were British, with another 6,000 from the King's German Legion (KGL). All of the British Army troops were regular soldiers, but only 7,000 of them were Peninsular War veterans. In addition, there were 17,000 Dutch and Belgian troops, 11,000 from Hanover, 6,000 from Brunswick, and 3,000 from Nassau.",
+									"The Prussian army was in the throes of reorganisation. In 1815, the former Reserve regiments, Legions, and Freikorps volunteer formations from the wars of 1813–1814 were in the process of being absorbed into the line, along with many Landwehr (militia) regiments. The Landwehr were mostly untrained and unequipped when they arrived in Belgium. The Prussian cavalry were in a similar state. Its artillery was also reorganising and did not give its best performance – guns and equipment continued to arrive during and after the battle.",
+									"After Ligny, the Prussian army, although defeated, was able to realign its supply train, reorganise itself, and intervene decisively on the Waterloo battlefield within 48 hours. Two and a half Prussian army corps, or 48,000 men, were engaged at Waterloo; two brigades under Bülow, commander of IV Corps, attacked Lobau at 16:30, while Zieten's I Corps and parts of Pirch I's II Corps engaged at about 18:00."
+								] 
+							}						
+
+						],
+						"paintings": [
+							{
+								"artist": "William Sadler",
+								"title": "Battle of Waterloo 1815",
+								"link": "Battle_of_Waterloo"
+							 },
+							{
+								"artist": "Adolph Northen",
+								"title": "The Prussian attack on Plancenoit",
+								"link": "Prussian_Attack_Plancenoit"
+							 }							 
+						]
+					},
+
+				"Battle of Wavre": 
+				 	{
 						"title": "Battle of Wavre",
 						"date": {
 							"start": "1815-06-18",
@@ -289,17 +415,19 @@
 						"belligerents": {
 							"French Empire": {
 								"nations": ["French Empire"],
+								"commanders": ["Marshal Grouchy"],
 								"strength": 33000,
 								"casualties": 2500
 							},
 							"Seventh Coalition": {
 								"nations": ["Prussia"],
+								"commanders": ["Johann von Thielmann"],
 								"strength": 17000,
 								"casualties": 2500
 							}
 						}
 					}
-			]
+			}
 		}
 
 	},
@@ -422,6 +550,7 @@
 	"Batavian Republic": "Flag_Batavian_Republic.png",
 	"Denmark–Norway": "Flag_Denmark.png",
 	"Duchy of Warsaw": "Flag_Duchy_of_Warsaw.png",
+	"Brunswick" : "Flag_Duchy_of_Brunswick.png",
 	"Duchy of Brunswick": "Flag_Duchy_of_Brunswick.png",
 	"Electorate of Bavaria": "Flag_Electorate_of_Bavaria.png", 
 	"Etruria": "Flag_Etruria.png", 
@@ -435,7 +564,8 @@
 	"Napoleonic Italy": "Flag_Napoleonic_Kingdom_of_Italy.png",
 	"Napoleonic Spain": "Flag_Napoleonic_Spain.png",
 	"Portugal": "Flag_Portugal.png", 
-	"Prussia": "Flag_Prussia.png", 	 
+	"Prussia": "Flag_Prussia.png",
+	"Russia": "Flag_Russia.png",  	 
 	"Russian Empire": "Flag_Russia.png", 
 	"United Kingdom": "Flag_United_Kingdom.png",
 	"Kingdom of the Netherlands": "Flag_Netherlands.png",
@@ -447,7 +577,8 @@
 	"Kingdom of Sicily": "Flag_Kingdom_of_the_Two_Sicilies.png",
 	"Nassau": "Flag_Nassau.png",
 	"Saxony": "Flag_Saxony.png",
-	"Sardinia": "Flag_Kingdom_of_Sardinia.png", 
+	"Sardinia": "Flag_Kingdom_of_Sardinia.png",
+	"Kingdom of Spain" : "Flag_Spain.png", 
 	"Spain": "Flag_Spain.png", 	
 	"Sweden": "Flag_Sweden.png",
 	"Switzerland": "Flag_Switzerland.png",

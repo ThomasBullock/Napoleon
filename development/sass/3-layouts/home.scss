@@ -85,34 +85,6 @@ body {
 
 
 
-	.hero {
-		@include rounded-box(2px, $smoke, $oil);
-		position: relative;
-		margin-top: $base-spacing;
-		// @include outer-container(80%);
-		// width: 100%;
-		// min-height: 540px;
-		// background: url('../img/campaigns/Waterloo.jpg');
-		// background-repeat: no-repeat;
-		// background-size: cover;
-		
-		@include element('img') {
-
-			@include img-responsive();
-
-		}
-		
-		@include element('heading') {
-			text-align: center;
-		  margin: $base-spacing auto;
-		  position: absolute;
-		  top: 0; left: 0; bottom: 0; right: 0;
-			color: $vapor;
-			text-shadow: 0 1px 1px rgba(17, 17, 17, .5);
-		}
-		
-	}
-
 
 
 	

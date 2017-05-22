@@ -15,8 +15,6 @@ const month = new Array();
 
 (function (global) {
 
-    console.log([1, 2, 3, 4, 5].includes(4)); // to test transpiling
-
     var menuToggle = document.querySelector('.header__nav-menu-button');
     var menu = document.querySelector('.header__row');
 
@@ -31,9 +29,7 @@ const month = new Array();
         }
     });
 
-    var message = 'Application is running!';
 
-    console.log(message);
 
     menuToggle.addEventListener('click', function () {
         menu.classList.toggle('show');
@@ -145,7 +141,6 @@ function initMap() {
     }
     
     
-    
     function showListings(info) {
         
         var bounds = new google.maps.LatLngBounds();
@@ -154,12 +149,22 @@ function initMap() {
           bounds.extend(marker.position);            
         })
         map.fitBounds(bounds);
-        console.log(info);                
+             
     }
 
     var data = [{ "title": "Battle of Ulm", "location": { "lat": 48.4085152, "lng": 9.9428302 }, "date": { "start": "1805-10-15", "end": "1805-10-20" }, "result": "Decisive French victory" }, { "title": "Battle of Trafalgar", "location": { "lat": 36.327282, "lng": -6.215012 }, "date": { "start": "1805-10-21" }, "result": "Decisive British victory" }, { "title": "Battle of Austerlitz", "location": { "lat": 49.1410606, "lng": 16.7668404 }, "date": { "start": "1805-12-02" }, "result": "Decisive French victory" }];
 
-    createMarkerList(local_data.battles, null, null);
+    console.log(local_data);
+    const battlesArray = []
+
+    for (var prop in local_data.battles) {
+        console.log(prop);
+        battlesArray.push(local_data.battles[prop])
+    }
+
+    console.log(battlesArray);
+
+    createMarkerList(battlesArray, null, null);
 }
 
 
