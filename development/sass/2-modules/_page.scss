@@ -1,13 +1,26 @@
 	.page {
 
 		background: $white;
-		padding-top: 85px;
+		padding-top: 67px;
 		// padding-left: $base-spacing;
 		// padding-right: $base-spacing;		
+
+    /* ================================= 
+      DESKTOP
+    ==================================== */          
+	    @include media ($desktop) {	
+	    	padding-top: 85px;
+	    }		
 		
 		@include modifier('black') {
-			padding-top: 85px;
+			padding-top: 67px;
 			background: $jet;
+	    /* ================================= 
+	      DESKTOP
+	    ==================================== */          
+	    @include media ($desktop) {	
+	    	padding-top: 85px;
+	    }				
 			
 			@include element('heading') {
 				padding-top: $base-spacing / 2;				

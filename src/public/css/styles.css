@@ -895,10 +895,22 @@ select {
 
 .page {
   background: #FEFEFE;
-  padding-top: 85px; }
+  padding-top: 67px;
+  /* ================================= 
+      DESKTOP
+    ==================================== */ }
+  @media screen and (min-width: 1025px) {
+    .page {
+      padding-top: 85px; } }
   .page--black {
-    padding-top: 85px;
-    background: #222222; }
+    padding-top: 67px;
+    background: #222222;
+    /* ================================= 
+	      DESKTOP
+	    ==================================== */ }
+    @media screen and (min-width: 1025px) {
+      .page--black {
+        padding-top: 85px; } }
     .page--black__heading {
       padding-top: 0.75em;
       color: #EEEEEE;
