@@ -19,6 +19,7 @@
 				"Battle of Ulm":	
 				 {
 						"title": "Battle of Ulm",
+						"campaign" : "War of the Third Coalition 1805",
 						"date": {
 							"start": "1805-10-15",
 							"end": "1805-10-20"
@@ -47,6 +48,7 @@
 				"Battle of Trafalgar":
 				 {
 						"title": "Battle of Trafalgar",
+						"campaign" : "War of the Third Coalition 1805",	
 						"banner" : "Trafalgar_Lg",
 						"date": {
 							"start": "1805-10-21"
@@ -86,6 +88,7 @@
 				"Battle of Austerlitz" :
 				 	{
 						"title": "Battle of Austerlitz",
+						"campaign" : "War of the Third Coalition 1805",							
 						"banner": "Austerlitz_Lg",
 						"date": {
 							"start": "1805-12-02"
@@ -185,6 +188,7 @@
 				"Napoleon captures Vilnius":
 					 {
 						"title": "Napoleon captures Vilnius",
+						"campaign" : "French invasion of Russia",						
 						"date": {"start": "1812-06-28"},
 						"result": "French victory after light resistance",
 						"location":
@@ -210,6 +214,7 @@
 				"Battle of Saltanovka" :
 				 	{
 						"title": "Battle of Saltanovka",
+						"campaign" : "French invasion of Russia",								
 						"date": {
 							"start": "1812-07-23"
 						},
@@ -233,6 +238,7 @@
 				"Battle of Smolensk" :
 				 	{
 						"title": "Battle of Smolensk",
+						"campaign" : "French invasion of Russia",								
 						"date": {"start": "1812-08-16"},
 						"result": "French tactical victory",
 						"location": {"lat": 54.8027259, "lng": 31.9107321},
@@ -254,6 +260,7 @@
 				"Battle of Borodino" :
 					 {
 						"title": "Battle of Borodino",
+						"campaign" : "French invasion of Russia",							
 						"date": {"start" : "1812-09-07"},
 						"result": "French tactical victory",
 						"location": {"lat": 55.516667, "lng": 35.816667},
@@ -295,6 +302,7 @@
 				"Battle of Ligny" :
 					{
 						"title": "Battle of Ligny",
+						"campaign" : "Hundred Days (War of the Seventh Coalition)",						
 						"date": {
 							"start": "1815-06-16"
 						},
@@ -323,6 +331,7 @@
 				"Battle of Quatre Bras"	:
 				 {
 						"title": "Battle of Quatre Bras",
+						"campaign" : "Hundred Days (War of the Seventh Coalition)",	
 						"date": {
 							"start": "1815-06-16"
 						},
@@ -350,6 +359,7 @@
 				"Battle of Waterloo":
 				 {
 						"title": "Battle of Waterloo",
+						"campaign" : "Hundred Days (War of the Seventh Coalition)",			
 						"banner": "Waterloo_Lg",
 						"date": {
 							"start": "1815-06-18"
@@ -403,6 +413,7 @@
 				"Battle of Wavre": 
 				 	{
 						"title": "Battle of Wavre",
+						"campaign" : "Hundred Days (War of the Seventh Coalition)",				
 						"date": {
 							"start": "1815-06-18",
 							"end": "1815-06-19"
