@@ -41,7 +41,9 @@ block content
 										h5.dynamic-row__sub-heading The #{battleToday.title}
 								else 
 									h4.dynamic-row__heading Todays random battle												
-									a.dynamic-row__link(href='/campaigns/Hundred Days (War of the Seventh Coalition)/' + randomBattle.title)
-										h5.dynamic-row__sub-heading The #{randomBattle.title}
-									p.dynamic-row__text #{randomBattle.niceDate}										
+									a.dynamic-row__link(href='/campaigns/' + randomBattle.campaign + '/' + randomBattle.battle)
+										h5.dynamic-row__sub-heading The #{randomBattle.battle}
+									p.dynamic-row__text= moment().format('MMM Do YYYY')
+		script(type='text/javascript').
+			var moment ={JSON.stringify(moment)}
 							

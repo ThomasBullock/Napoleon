@@ -14,13 +14,20 @@ var campaigns = Object.keys(data.Campaigns).map(function(item) { return data.Cam
 var flags = data.Flags;
 
 var indexPageData = thisDayIn(campaigns, characters);
-
+console.log(indexPageData);
 
 function random(max) {
 	return Math.floor(Math.random() * max);
 }
 
-console.log(random(characters.length))
+// console.log(random(characters.length))
+function getRandomFromObj(Obj) {
+	console.log(Obj)
+	var arr = Array.from(Object.keys(Obj));
+	console.log(arr);
+	return arr[random(arr.length)]
+}
+
 
 function thisDayIn(campaigns, characters) {
 
@@ -56,9 +63,24 @@ function thisDayIn(campaigns, characters) {
 	if (battlesToday[0] === undefined) {
 		// randomBattle = campaigns[random(campaigns.length)].battles[random(campaigns[0].battles.length)];
 		// randomBattle.niceDate = moment(randomBattle.date.start).format("MMM Do YYYY");
-		randomBattle = campaigns[2].battles["Battle of Waterloo"];
-		randomBattle.niceDate = moment(randomBattle.date.start).format("MMM Do YYYY");
+		// randomBattle = campaigns[2].battles["Battle of Waterloo"];
+		// randomBattle.niceDate = moment(randomBattle.date.start).format("MMM Do YYYY");
 
+		const randomCampaign = campaigns[random(campaigns.length)].title;
+		console.log(randomCampaign);
+		// const randomCampaignBattlesArray = Array.from(data.Campaigns[randomCampaign].battles); 
+		// const temp = data.Campaigns[randomCampaign].battles[random(Object.keys(data.Campaigns[randomCampaign].battles).length)]; 
+		// console.log(randomCampaignBattlesArray);
+		// const randomBattle = campaigns[randomCampaign]
+
+		const randomBattle = getRandomFromObj(data.Campaigns[randomCampaign].battles);
+		console.log(randomCampaign, randomBattle);
+		// console.log(moment)
+		var dynamicLink = {
+			campaign: randomCampaign,
+			battle: randomBattle,
+			date: "1805-10-15"
+		}
 	}
 
 	if (diedToday[0] === undefined) {
@@ -72,7 +94,8 @@ function thisDayIn(campaigns, characters) {
 			bornToday: bornToday[0] || null,
 			battleToday: battlesToday[0] || null,
 			randomGeneral: randomGeneral,
-			randomBattle: randomBattle	
+			randomBattle: dynamicLink,
+			moment: moment	
 	}	
 }
 
@@ -126,7 +149,7 @@ app.get('/battles/', function(req, res) {
 app.get('/campaigns/:name?/:battle', function(req, res) {
 	var campaign = req.params.name;	
 	var battle = req.params.battle
-	console.log(data.Campaigns[campaign])
+	// console.log(data.Campaigns[campaign])
 	if(!battle) {
 		res.render('construction')	
 	} else {
