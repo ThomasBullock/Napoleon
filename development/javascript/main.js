@@ -15,6 +15,7 @@ const month = new Array();
 
 (function (global) {
 
+
     var menuToggle = document.querySelector('.header__nav-menu-button');
     var menu = document.querySelector('.header__row');
 
@@ -34,6 +35,41 @@ const month = new Array();
     menuToggle.addEventListener('click', function () {
         menu.classList.toggle('show');
     });
+
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the button that opens the modal
+    var galleryButtons = Array.from(document.querySelectorAll('.battle__gallery-thumb'));
+
+    console.log(modal);
+    console.log(galleryButtons)
+    // Get the <span> element that closes the modal
+    var span = document.querySelector('.modal__close');
+
+    // When the user clicks on the button, open the modal 
+    galleryButtons.forEach( (btn) => {
+        btn.addEventListener('click', function(e) {
+            modal.style.display = "block";
+        })    
+    });
+    // btn.onclick = function() {
+
+    // }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+
 })(window);
 
 function initMap() {
@@ -65,6 +101,7 @@ function initMap() {
             // Get the position from the location array.
             var position = battles[i].location;
             var title = battles[i].title;
+            var campaign = battles[i].campaign;
             var result = battles[i].result;
             var date = battles[i].date;
             console.log(date);
@@ -72,6 +109,7 @@ function initMap() {
             var marker = new google.maps.Marker({
                 position: position,
                 title: title,
+                campaign: campaign,
                 date: date, 
                 result: result,
                 animation: google.maps.Animation.DROP,
@@ -131,7 +169,7 @@ function initMap() {
           infowindow.setContent(`<div class="info-window">
                                     <h2>  ${marker.title} </h2>
                                     <h5> ${dateFormat(marker.date)}</h5>
-                                    
+                                    <a href="https://napoleon-era-wiki.herokuapp.com/campaigns/${marker.campaign}/${marker.title} "class="button">Learn More</a>
                                     <p> ${marker.result} </p>
                                 </div>`);
 

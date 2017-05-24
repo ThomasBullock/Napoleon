@@ -260,6 +260,7 @@
 				"Battle of Borodino" :
 					 {
 						"title": "Battle of Borodino",
+						"banner": "Borodino_Lg",
 						"campaign" : "French invasion of Russia",							
 						"date": {"start" : "1812-09-07"},
 						"result": "French tactical victory",
@@ -302,6 +303,7 @@
 				"Battle of Ligny" :
 					{
 						"title": "Battle of Ligny",
+						"banner": "Ligny_Lg",
 						"campaign" : "Hundred Days (War of the Seventh Coalition)",						
 						"date": {
 							"start": "1815-06-16"
@@ -325,7 +327,19 @@
 								"strength": 84000,
 								"casualties": 12000
 							}
-						}
+						},
+						"paintings": [
+							{
+								"artist": "Clemens Otto Fikentscher",
+								"title": "Prince Blücher unhorsed, with Count Nostitz to his aid",
+								"link": "Blucher_bei_Ligny"
+							 },
+							{
+								"artist": "Ernest Crofts",
+								"title": "Ligny",
+								"link": "Crofts_Ernest_The_Battle_Of_Ligny"
+							 }							 
+						]						
 					},
 
 				"Battle of Quatre Bras"	:
@@ -353,7 +367,7 @@
 								"strength": 36000,
 								"casualties": 4800
 							}
-						}
+						}					
 					},
 
 				"Battle of Waterloo":

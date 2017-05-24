@@ -254,7 +254,8 @@
 
 		@include element('gallery-thumb') {	
 			@include img-responsive();
-
+			border: solid 1px $ebony;
+			box-shadow: 0 3px 2px $heavy-shadow;
 		}				
 
 				

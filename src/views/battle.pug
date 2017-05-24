@@ -29,7 +29,7 @@ block content
 									span
 										span.battle__strong Casualties: 
 										| #{key.casualties}
-						if data.description				
+						if data.description             
 							.battle__summary
 								each section, index in data.description
 									h3.battle__summary-title #{section.heading}
@@ -38,13 +38,16 @@ block content
 											| #{entry}
 									else 
 										p there are no values
-			if data.paintings									 
+			if data.paintings                                    
 				.battle__gallery
 					ul.battle__gallery-list.wrapper
 						each painting in data.paintings 
 							li.battle__gallery-item
 								img.battle__gallery-thumb(src='/static/img/battles/' + painting.link + '_Sm.jpg' , alt=painting.title)
-                         
+			#myModal.modal
+				.modal__content
+					span.modal__close ×						
+					p.modal__description Some text in the Modal
 
 
 
