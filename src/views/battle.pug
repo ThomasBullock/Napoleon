@@ -9,7 +9,12 @@ block content
 				.battle__item.wrapper
 					.battle__facts
 						h2.battle__heading #{data.title}
-						span.battle__date #{data.date.start}
+						span.battle__date
+							if data.date.end
+								span #{h.moment(data.date.start).format('MMM Do')}
+								span till #{h.moment(data.date.end).format('MMM Do YYYY')}
+							else 
+								span #{h.moment(data.date.start).format('MMM Do YYYY')}								
 						each key, index in data.belligerents
 							.battle__belligerents
 								h5 #{index}
@@ -45,10 +50,14 @@ block content
 							li.battle__gallery-item
 								img.battle__gallery-thumb(src='/static/img/battles/' + painting.link + '_Sm.jpg' , alt=painting.title)
 			#myModal.modal
-				.modal__content
-					span.modal__close ×						
-					p.modal__description Some text in the Modal
-
+				.modal__container
+					.modal__header
+						h3.modal__title
+						span.modal__close ×		
+					.modal__body
+					.modal__footer
+		script(type='text/javascript').
+				var local_data =!{JSON.stringify(data)}
 
 
 

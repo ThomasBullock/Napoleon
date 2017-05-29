@@ -4,28 +4,7 @@ const express = require('express');
 const moment = require('moment');
 const	helpers = require('./helpers');	
 const routes = require('./routes/index');		
-
-
-
-// console.log(today);
-// console.log(moment);
-
-
-
-// var indexPageData = thisDayIn(campaigns, characters);
-// console.log(indexPageData);
-
-// function random(max) {
-// 	return Math.floor(Math.random() * max);
-// }
-
-// // console.log(random(characters.length))
-// function getRandomFromObj(Obj) {
-// 	console.log(Obj)
-// 	var arr = Array.from(Object.keys(Obj));
-// 	console.log(arr);
-// 	return arr[random(arr.length)]
-// }
+const errorHandlers = require('./handlers/errorHandlers');
 
 
 var app = express();
@@ -42,6 +21,8 @@ app.set('view engine', 'pug');
 app.set('views', __dirname + '/views');
 
 app.use('/', routes);
+
+app.use(errorHandlers.notFound)
 
 
 app.listen(process.env.PORT || 3044, () => console.log('All is ok!')); 

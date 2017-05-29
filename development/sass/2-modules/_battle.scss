@@ -110,11 +110,20 @@
 		}			
 		
 		@include element('date') {
-			flex: 0 1 25%;
+			flex: 0 1 60%;
 			align-self: baseline;	
 			color: $steel;
 			margin-top: 0;
-			// margin-bottom: $base-spacing * 2;
+		
+			/* ================================= 
+			  TABLET & DESKTOP
+			==================================== */
+
+				span:nth-child(2) {
+					margin-left: $base-spacing / 8;
+				}      	
+  									
+
 		}	
 
 		@include element('locations') {
@@ -128,9 +137,6 @@
 
 		@include element('summary-title') {
 			margin-top: $base-spacing;
-			// display: block;
-			// flex: 1 1 100%;
-			// color: $oil;
 			margin-bottom: $base-spacing / 2;											
 		}
 		
@@ -143,11 +149,9 @@
 		}
 
 		@include element('row') {
-			// margin-bottom: $base-spacing;
 			flex: 1 1 100%;
 			display: flex;
 			flex-wrap: wrap;
-			// flex-direction: column;
 			justify-content: center;
 			align-items: center;
 			justify-content: space-between;								

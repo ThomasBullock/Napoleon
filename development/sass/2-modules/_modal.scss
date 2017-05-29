@@ -1,38 +1,105 @@
 .modal {
     display: none; /* Hidden by default */
+    
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
+	  top: 0;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: $ebony; /* Fallback color */
+    background-color: transparentize($ebony, .2); /* Black w/ opacity */
 
-	@include element('content') {
-		@include rounded-box();
-		position: relative;
-	    // background-color: #fefefe;
-	    margin: 15% auto; /* 15% from the top and centered */
+
+// Shell div to position the modal with bottom padding
+	@include element('shell') {
+	  position: relative;
+	  width: auto;
+	  margin: 10px;
+	}
+
+	@include element('container') {
+		// @include outer-container(60%);
+			z-index: 99999;
+			display: table;
+	    margin: 100px auto;
 	    padding: $base-spacing;
-	    border: 1px solid #888;
-	    width: 80%; /* Could be more or less, depending on screen size */
-	    min-height: 500px;
+	    border: 1px solid $ebony;
+	    width: auto; /* Could be more or less, depending on screen size */
+	    overflow-y: auto;    
+	    overflow-x: auto;
+	    width: auto;
+			background: $smoke;
+	}
+
+	@include element('title') {
+		color: $jet;
+		text-align: center;
+		margin: 0;
+	}
+
+	@include element('header') {
+		position: relative;
+	}
+	
+	@include element('body') {
+		width: auto;
+		padding: $base-spacing;
 	}
 
 	@include element('close') {
+		cursor: pointer;
+		line-height: 20px;
 		position: absolute;
-		top: $base-spacing;
-		right: $base-spacing;
-	    color: #aaa;
-	    float: right;
-	    font-size: 28px;
-	    font-weight: bold;
+		top: 2px;
+		right: 2px;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 	}
 
-	@include element('image') {
+	@include element('footer') {
+		color: $charcoal;		
+		text-align: center;
+	}
 
+// Modal body
+// Where all modal content resides (sibling of .modal-header and .modal-footer)
+	// @include element('body') {
+	//   position: relative;
+	//   padding: $base-spacing / 2;
+	// }
+
+
+// Footer (for actions)
+// 	@include element('footer') {
+//   padding: $base-spacing / 2;
+//   text-align: right; // right align buttons
+//   border-top: 1px solid $oil;
+//   // @include clearfix; // clear it in case folks use .pull-* classes on buttons
+
+//   // Properly space out buttons
+//   .btn + .btn {
+//     margin-left: 5px;
+//     margin-bottom: 0; // account for input[type="submit"] which gets the bottom margin like all other inputs
+//   }
+//   // but override that for button groups
+//   .btn-group .btn + .btn {
+//     margin-left: -1px;
+//   }
+//   // and override it for block buttons as well
+//   .btn-block + .btn-block {
+//     margin-left: 0;
+//   }
+// }
+
+	@include element('image') {
+		@include img-responsive();
+	  border: 1px solid $ebony;
 	}	
 
 	@include element('description') {

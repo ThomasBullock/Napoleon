@@ -1,7 +1,23 @@
-.info-window {
+.infowindow {
 	text-align: center;
 	
-	@include modifier('heading') {
+	@include element('heading') {
+		color: $red;
+		text-shadow: 0 1px 0 darken($red, 35%);
+		margin: 0;
+		font-size: ms(3);
 		font-family: $LibreBaskerville;
+	}
+	
+	@include element('text') {
+		font-size: ms(1);
+	}	
+	
+	@include element('link') {
+		color: $base;
+		font-size: ms(1);
+		&:hover {
+			color: $jade;
+		}
 	}
 }

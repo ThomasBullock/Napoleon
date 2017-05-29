@@ -284,7 +284,6 @@ const styles = [{
             "visibility": "off"
         }]
     }];
-
 const month = new Array();
     month[0] = "January";
     month[1] = "February";
@@ -316,44 +315,48 @@ const month = new Array();
         }
     });
 
-
-
     menuToggle.addEventListener('click', function () {
         menu.classList.toggle('show');
     });
 
-    // Get the modal
+    function closeModal() {
+        modal.style.display = "none";
+        modalTitle.textContent = '';
+        modalBody.innerHTML = '';    
+    }
+
     var modal = document.getElementById('myModal');
 
-    // Get the button that opens the modal
-    var galleryButtons = Array.from(document.querySelectorAll('.battle__gallery-thumb'));
+    if(modal) {
+        // Get the button that opens the modal
+        var galleryButtons = Array.from(document.querySelectorAll('.battle__gallery-thumb'));
+        var modalBody = document.querySelector('.modal__body');
+        var modalTitle = document.querySelector('.modal__title');
+        var modalFooter = document.querySelector('.modal__footer');        
+        var close = document.querySelector('.modal__close');
 
-    console.log(modal);
-    console.log(galleryButtons)
-    // Get the <span> element that closes the modal
-    var span = document.querySelector('.modal__close');
+        // When the user clicks on the button, open the modal 
+        galleryButtons.forEach( (btn, index) => {
+            btn.addEventListener('click', function(e) {
+                var modalImg = document.createElement('img');
+                modalImg.classList.add('modal__image')
+                modalImg.src = `/static/img/battles/${local_data.paintings[index].link}_Lg.jpg`;
+                modalBody.appendChild(modalImg);
+                modalTitle.textContent = local_data.paintings[index].title;
+                modalFooter.textContent = `by ${local_data.paintings[index].artist}`
+                modal.style.display = "block";
+            }, index)    
+        });
 
-    // When the user clicks on the button, open the modal 
-    galleryButtons.forEach( (btn) => {
-        btn.addEventListener('click', function(e) {
-            modal.style.display = "block";
-        })    
-    });
-    // btn.onclick = function() {
-
-    // }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-        modal.style.display = "none";
+        close.addEventListener('click', closeModal);
+        window.addEventListener('click', function(e){
+            if (event.target == modal) {
+                closeModal()    
+            }            
+        });
+      
     }
 
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
 
 
 })(window);
@@ -452,11 +455,11 @@ function initMap() {
           infowindow.addListener('closeclick', function() {
             infowindow.marker = null;
           });
-          infowindow.setContent(`<div class="info-window">
-                                    <h2>  ${marker.title} </h2>
+          infowindow.setContent(`<div class="infowindow">
+                                    <h2 class="infowindow__heading">  ${marker.title} </h2>
                                     <h5> ${dateFormat(marker.date)}</h5>
-                                    <a href="https://napoleon-era-wiki.herokuapp.com/campaigns/${marker.campaign}/${marker.title} "class="button">Learn More</a>
-                                    <p> ${marker.result} </p>
+                                    <p class="infowindow__text"> ${marker.result} </p>
+                                    <a class="infowindow__link" href="https://napoleon-era-wiki.herokuapp.com/campaigns/${marker.campaign}/${marker.title} "class="button">Learn More</a>
                                 </div>`);
 
           // Open the infowindow on the correct marker.

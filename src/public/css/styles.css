@@ -959,45 +959,79 @@ select {
   /* Stay in place */
   z-index: 1;
   /* Sit on top */
-  left: 0;
   top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   width: 100%;
   /* Full width */
   height: 100%;
   /* Full height */
   overflow: auto;
   /* Enable scroll if needed */
-  background-color: black;
+  background-color: #111111;
   /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(17, 17, 17, 0.8);
   /* Black w/ opacity */ }
-  .modal__content {
-    -webkit-border-radius: 2px;
-            border-radius: 2px;
-    background: #EEEEEE;
-    overflow: hidden;
-    border: solid 2px #CCCCCC;
+  .modal__shell {
     position: relative;
-    margin: 15% auto;
-    /* 15% from the top and centered */
+    width: auto;
+    margin: 10px; }
+  .modal__container {
+    z-index: 99999;
+    display: table;
+    margin: 100px auto;
     padding: 1.5em;
-    border: 1px solid #888;
-    width: 80%;
+    border: 1px solid #111111;
+    width: auto;
     /* Could be more or less, depending on screen size */
-    min-height: 500px; }
+    overflow-y: auto;
+    overflow-x: auto;
+    width: auto;
+    background: #EEEEEE; }
+  .modal__title {
+    color: #222222;
+    text-align: center;
+    margin: 0; }
+  .modal__header {
+    position: relative; }
+  .modal__body {
+    width: auto;
+    padding: 1.5em; }
   .modal__close {
+    cursor: pointer;
+    line-height: 20px;
     position: absolute;
-    top: 1.5em;
-    right: 1.5em;
+    top: 2px;
+    right: 2px;
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold; }
+  .modal__footer {
+    color: #555555;
+    text-align: center; }
+  .modal__image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid #111111; }
 
-.info-window {
+.infowindow {
   text-align: center; }
-  .info-window--heading {
+  .infowindow__heading {
+    color: #DF5A6A;
+    text-shadow: 0 1px 0 #711621;
+    margin: 0;
+    font-size: 1.95312rem;
     font-family: "Libre Baskerville", serif; }
+  .infowindow__text {
+    font-size: 1.25rem; }
+  .infowindow__link {
+    color: #AAAAAA;
+    font-size: 1.25rem; }
+    .infowindow__link:hover {
+      color: #7ADF9A; }
 
 .home__intro {
   font-size: 1.25rem;
@@ -1721,14 +1755,19 @@ svg {
     color: #333333; }
   .battle__date {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 25%;
-        -ms-flex: 0 1 25%;
-            flex: 0 1 25%;
+    -webkit-flex: 0 1 60%;
+        -ms-flex: 0 1 60%;
+            flex: 0 1 60%;
     -webkit-align-self: baseline;
         -ms-flex-item-align: baseline;
             align-self: baseline;
     color: #666666;
-    margin-top: 0; }
+    margin-top: 0;
+    /* ================================= 
+			  TABLET & DESKTOP
+			==================================== */ }
+    .battle__date span:nth-child(2) {
+      margin-left: 0.1875em; }
   .battle__locations {
     display: block;
     font-size: 1rem;
